@@ -1,0 +1,31 @@
+# Secrets & credentials — NEVER commit
+.env
+.env.*
+!.env.example
+credentials.json
+token.json
+*.pem
+*.key
+*.p12
+
+# Node / build
+node_modules/
+.trigger/
+dist/
+*.tsbuildinfo
+
+# Temporary / regenerable processing files
+.tmp/
+*.log
+
+# Legacy Python (from the old WAT project — kept only while migrating)
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
