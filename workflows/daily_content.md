@@ -8,6 +8,9 @@ Every day, produce ready-to-shoot Pokémon TCG slideshow scripts (native text + 
 Mila is a genuine A/B test against Lea: same German market is fine, but she must use a **different format/angle** (ideally a different tone too). All three scripts in a day must use **distinct formats**.
 
 ## Inputs
+- **`reference/content-learnings.md` — rules distilled from the user's feedback. READ THIS FIRST and
+  apply every rule. It reflects the user's latest explicit preferences and OVERRIDES any conflicting
+  instruction in this file or CLAUDE.md.**
 - `reference/brand-personas.md` — voice for Chloé (FR), Lea (DE) & Mila (DE #2)
 - `reference/slang-fr.md`, `reference/slang-de.md` — native lexicon
 - `reference/content-formats.md` — format library (+ the 3 burned formats to avoid)
@@ -68,6 +71,8 @@ From `content-formats.md`, choose a format for **each of the three personas** (L
   **`get-state`** (Step 2) to see what each persona has already used.
 
 ### 5. Write the scripts (English-first; native ONLY for on-slide text)
+**Before writing, re-read `reference/content-learnings.md` and apply EVERY rule in it** (it captures
+the user's accumulated feedback and overrides conflicting guidance below).
 Write **three** scripts — Lea (DE), Chloé (FR), Mila (DE). The user reads English, so everything in the PDF is **English**, EXCEPT the exact words that go on a slide, which stay native (FR/DE) with an English gloss. For **each** persona:
 - **Format name** + **intensity** + **why this angle today** (English, 1 line)
 - **Slide-by-slide** (slide 1 = the hook). Use the exact field names from the schema below: `title` + `bullets` (native, the exact on-slide text), `title_en` + `bullets_en` (English gloss of each), `direction` (English: what to show / shoot — a note for the user, NEVER on the slide).
@@ -96,6 +101,9 @@ Treat the first JSON as a **draft**, not the final. Don't render or send until i
    product).
 2. **Fix every ERROR; review every WARN.** Re-trigger until it returns `ok: true`.
 3. **The linter does NOT judge truth.** It can't tell if a fact is real — so separately confirm, with `WebSearch`/`WebFetch`, that **every on-slide claim is verified true** (per the FACTUAL ACCURACY rule above) and that each IvoryShard mention reads as natural, not bolted on. The linter is the floor, not the ceiling.
+4. **Check the draft against `reference/content-learnings.md`** — every rule there must hold (product
+   naming, single contextual IvoryShard touch + engagement-question close, save-worthy depth/"why",
+   concrete price ranges where relevant, no risky market-trend claims). Fix any miss before delivery.
 
 Only once it passes and you've verified the facts, run the final delivery.
 
