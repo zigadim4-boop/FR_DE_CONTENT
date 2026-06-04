@@ -42,6 +42,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ DE (Lea/Mila): "5 Dinge die ich beim Sammeln gern früher gewusst hätte" · "Andere Sammler vs ich 😅"
   - ✅ FR (Chloé): "5 trucs que j'aurais aimé savoir plus tôt" · "Les autres vs moi 😅"
   - ❌ topic (any persona): long-term sealed storage / deep ROI = investor-niche (DE ex.: "So lagerst du sealed Displays richtig")
+- **A comparison angle needs a real STAKE, not a flat "which do you prefer?".** "Version A ou B, tu
+  prends quoi ?" / "welche nimmst du?" is a neutral poll with no tension. The pull of a comparison is
+  the *asymmetry* — one side has something the other doesn't, one is a trap, one ages badly. Lead with
+  the gap, not the preference.
+  - ✅ FR (Chloé): "La FR a des cartes que la JP n'aura jamais" (asymmetry = the stake)
+  - ✅ DE (Lea/Mila): "Reprint vs Original — einer verliert massiv an Wert"
+  - ❌ "FR ou JP, tu prends quoi ?" (flat preference, no stake)
 - **Nuance — don't over-correct:** protecting your *pulls / singles* (sleeve → toploader → away from
   light) is still broadly relatable; it's *long-term sealed-box storage* that's the niche topic. Keep
   the two separate.
@@ -76,6 +83,19 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ DE (Lea/Mila): "Ehrliche Hold-Liste — eins davon werdet ihr nicht erwarten" (explicit reveal)
   - ✅ FR (Chloé): "Ma vraie liste de holds — et y'en a un que vous n'attendez pas"
   - ➖ weaker: "Ehrliche Hold-Liste, kein Hype" (authentic, but no explicit curiosity gap)
+- **A hook must carry real stakes — never a neutral preference question, and never undersell its own
+  value.** "Which do you prefer? / tu prends quoi ?" is flat (no tension); "I'll quickly compare them
+  / je te fais le comparatif vite fait" deflates the payoff before you deliver it. Open a loss /
+  warning / surprise loop instead. **In a comparison ("versus") format the set name can wait for
+  slide 2** — don't spend the hook naming the topic, spend it opening a loop.
+  - ✅ FR (Chloé): "La version JP a même pas toutes les cartes de la FR 👀" (stake + surprise, set name deferred)
+  - ✅ DE (Lea/Mila): "Die JP-Version hat nicht mal alle Karten der DE 👀"
+  - ❌ FR: "Version FR ou JP de [set], tu prends quoi ? Je te fais le comparatif vite fait" (names topic, neutral, undersells)
+- **Slide 2 must stand on its own as a second cover.** Instagram re-serves slide 2 as the cover to
+  people who didn't engage with slide 1, so it can't assume slide 1 was seen — give it its own
+  curiosity / stakes, not a mid-thought continuation. (Platform-algorithm fact → universal.)
+  - ✅ slide 2 works cold: opens its own loop or states the stake plainly.
+  - ❌ slide 2 that only makes sense if you already read slide 1.
 
 ## Product naming
 - **Never invent language-variant product names** like "Bundle FR" / "FR Bundle" / "le Bundle FR".
@@ -100,13 +120,25 @@ NOT applied by rewriting already-delivered content — only by improving future 
 
 ## IvoryShard placement & the closing slide
 - Mention IvoryShard **exactly once**, contextually, right next to the "which product to buy"
-  recommendation (mid-deck, ~slide 4). One natural touch, never the star.
+  recommendation (mid-deck, ~slide 4). One natural touch, never the star. **Never on slide 1, slide 2,
+  or the last slide** (slides 1–2 are covers; the close is for engagement), and write it in **first
+  person** — a collector saying where *she* buys, not a brand announcement.
 - **Frame the shop as the answer to "where do I get this?", as a collector's tip — never as a
   marketing CTA.** "Benachrichtigung an, dann bist du dabei" / "sign up for notifications" reads as a
   brand account selling, not a person sharing where they buy. Make the shop the *answer to a buying
   question*, not a *sign-up funnel*.
   - ✅ DE: "Fairste Variante: bei IvoryShard — Stücklimits, kein Scalping"
   - ❌ DE: "Benachrichtigung an, dann bist du dabei"
+- **The shop beat must not CONTRADICT an earlier slide.** If a slide says the set is easy to find
+  locally ("tu la trouves près de chez toi" / "gibt's überall"), an online "buy it at IvoryShard"
+  plug on top of that makes no sense and reads as a forced ad. Reconcile the two: if the angle is
+  convenience/safety, frame the shop on a defensible point (below) — not on availability.
+- **No self-flattering or unverifiable shop claims — anchor on a defensible fact instead.** "le
+  meilleur site" / "best site" / "no markup" / "garanti authentique" are unprovable hype. Tie the
+  mention to something concrete and true: buying **direct from the source** (vs resellers),
+  **scellé / sealed**, **prices in €**, stock limits / no scalping.
+  - ✅ FR: "Je préfère commander à la source, scellé, en € — pas chez des revendeurs"
+  - ❌ FR: "le meilleur site, aucune marge" (unverifiable self-flattery)
 - **Land the mention on a CONCRETE-PRODUCT slide, as the answer to "where do I get THIS exact
   product" — never on a generic category slide.** Tied to a specific box the viewer already wants, the
   brand drop reads like a collector sharing a tip; dropped on a generic "limited products" slide it
@@ -147,6 +179,11 @@ NOT applied by rewriting already-delivered content — only by improving future 
   **This includes SUMMARY / recap slides:** a recap that just re-lists the picks and stops closes the
   narrative without inviting comments — always tack an open-ended question (or hot take) onto it.
   Open-ended questions on the close slide drive ~3–4× more comments than a neutral list.
+  **Also give a reason to SAVE or SHARE — carousels are ranked mostly on saves & shares, a different
+  lever than comments.** A "save this for the drop" or a share prompt feeds the algorithm even when
+  nobody comments. The strongest close slides do both: an engagement question *and* a save/share trigger.
+  - ✅ Save trigger (FR): "Garde ce post pour la sortie 📌" · Share (FR): "Tag un pote qui hésite encore 👀"
+  - ✅ Save trigger (DE): "Speicher dir das für den Release 📌"
   - ✅ Question: "Et toi, tu vises quelle carte en premier ? Dis-le moi en commentaire 👇"
   - ✅ Recap-close question (DE): "Was sind eure Hold-Sets? 👀👇"
   - ✅ Hot take (DE): "Hot Take: Dunkelnacht wird das überschätzteste Set des Jahres. Wer ist dabei? 👇"
@@ -182,6 +219,12 @@ NOT applied by rewriting already-delivered content — only by improving future 
   mid-way through the physical checks feels repetitive and kills the build.
   - ✅ Anti-scam order: plastique / scotch / poids (physical) → "prix trop beau" (market) → "le move le plus safe" (action) → engagement Q.
   - ❌ poids → "prix trop beau" → back to another physical check (no build, reads as repetitive).
+- **Each interior slide should open a small question the next one answers (micro-cliffhanger).** Beyond
+  the slide-1 hook, every slide should leave a thread the next slide picks up, so the natural move is
+  to keep swiping. End a slide on the *setup*, pay it off on the next.
+  - ✅ FR (Chloé): "La FR a 2 cartes que la JP n'a pas…" → next slide names them.
+  - ✅ DE (Lea/Mila): "Eine davon ist fast unauffindbar 👀" → next slide reveals which.
+  - ❌ self-contained slides that each fully close their point (no reason to swipe on).
 - **The action / penultimate slide gives a concrete action, not passive advice.** After teaching
   techniques, "au pire tu attends" / "just wait" is anticlimactic. End the value on a do-this
   takeaway; keep "the set is available everywhere" as light reassurance, not the headline.
@@ -202,6 +245,15 @@ NOT applied by rewriting already-delivered content — only by improving future 
   October" on a slide is a credibility miss if the real date is published. Pull the **exact date from
   the official source (pokemon.com / press.pokemon.com)** and put it on the slide.
   - ✅ DE: "Erscheint am 16.09.2026" — ❌ "Im Oktober" (exact date over a vague month; localize the phrasing per language)
+- **Verify EVERY factual claim before it ships — not just dates.** Set names, **chase cards**, **card
+  counts**, release dates, AND **current stock / availability**. WebSearch/WebFetch are free; an
+  unverified card count or "in stock" claim is as damaging as a wrong date.
+- **A localized (Western) set is NOT the same as its Japanese base set — different NAME *and* often a
+  different CARD LIST.** Western/international sets carry their own name (never the JP name) and
+  routinely merge multiple JP sets and/or add cards the JP base never had. So (a) never imply the JP
+  version shares the Western set's name, and (b) in a JP-vs-Western post the *interesting* angle is the
+  card **delta** — what the Western set added — not "they're identical." Verify the JP base-set name,
+  the shared cards, and the added cards at run time.
 - **Confirmed reference facts (verified 2026-06-03 via pokemon.com / press.pokemon.com — re-verify at
   run time, details can shift):**
   - *Universal facts (all personas — dates/identity are language-neutral):*
@@ -211,22 +263,42 @@ NOT applied by rewriting already-delivered content — only by improving future 
       simultaneous global release"*) — a big hype-runway framing is accurate.
     - The **"Pitch Black"** set releases **17 July 2026** — a *different* set from 30th Celebration;
       don't conflate the two dates.
+    - **Set ME04 = the Western localization of Japan's "Ninja Spinner" (M4)** (verified 2026-06-04 via
+      Bulbapedia / PokeBeach / pokemon.com FR). JP "Ninja Spinner" released **13 Mar 2026**; the
+      Western set (**122 cards**) released **22 May 2026**. **Card delta (the post's best angle):** most
+      of the base set is **shared**, incl. the headliner **Mega Greninja ex** (FR Méga-Amphinobi-ex);
+      the Western printing **ADDS** cards the JP base lacked — **Mega Gallade ex** (FR Méga-Gallame-ex)
+      and a **regular Krookodile ex** (FR Crocorible ex — *NOT* a Mega), plus a Trainer. ❌ Never say
+      "only the headliner is shared" (false — most of the set is shared) and ❌ never call Crocorible ex
+      a "Méga".
   - *Localized names — use HER market's name only, never cross FR↔DE:*
     - **DE (Lea/Mila):** "Pitch Black" = **"Dunkelnacht"** (full: "Mega-Entwicklung – Dunkelnacht").
     - **FR (Chloé):** use the official **French** name — verify at run time; do NOT use "Dunkelnacht"
       or German date phrasing ("Erscheint am…") on a French post.
+    - **Set ME04 — same set, three market names (never cross them):** EN **"Chaos Rising"**, FR
+      **"Chaos Ascendant"** (Chloé), DE **"Wachsendes Chaos"** (Lea/Mila — verify at run time). The
+      Japanese set is **"Ninja Spinner"** — never the FR/EN/DE name. Card names are localized too
+      (FR Méga-Amphinobi-ex; DE/EN use their own) — use HER market's card names, verified per language.
 - (Reinforces the superlative-verify rule above and the FACTUAL ACCURACY gate in `daily_content.md`:
   official set names/dates are slide-safe **only after you confirm them that day**.)
 
 ## Bullet consistency & pacing
-- **Keep bullets uniform in length and structure across slides** so the whole deck reads at one
-  steady pace. Slides drifting between 3-word fragments and full sentences makes the carousel feel
-  uneven. Aim for the **same bullet count and similar rhythm** on every content slide (3 is the
-  default; see `daily_content.md` for the 2–4 floor/ceiling).
+- **One short title per slide, and a HARD maximum of 3 bullets** (never more than 3). **Keep bullets
+  uniform in length and structure across slides** so the whole deck reads at one steady pace. Slides
+  drifting between 3-word fragments and full sentences makes the carousel feel uneven. Aim for the
+  **same bullet count and similar rhythm** on every content slide (3 is the default *and* the ceiling;
+  see `daily_content.md` for the 2–4 floor/ceiling).
 - **Short punchy phrases, not full sentences.** Cut filler connectors — "und", "dazu", "passend zu",
   "außerdem" (DE) / "et", "ainsi que", "en plus" (FR). Each bullet = one idea, telegram-style.
   - ✅ DE bullets: "16.09.2026 — weltweit gleichzeitig" · "Erstes Set dieser Art" · "Riesiger Hype-Runway"
   - ❌ DE bullet: "Das Set erscheint im Oktober und passend zum Jubiläum gibt es dazu noch …"
+- **Bullets are plain phrases — no in-bullet symbols, no "label : value" structuring.** Hard ban:
+  **arrows (→) and angle brackets (<>)** never belong in a bullet; and **don't build a bullet as
+  "Label : explication"** — it reads like a spec sheet, not a person talking. (Naturally-reading
+  exceptions: a short price tag like "La SIR : ~50-150€", and the short *title* above the bullets. A
+  normal em dash in running text is fine — the ban is arrows / angle brackets / label-colons.)
+  - ✅ FR bullet: "repère les vendeurs sérieux"
+  - ❌ FR bullet: "Système d'évaluation : repérer les vendeurs sérieux" (label:value, too structured)
 
 ## Proofread the native text
 - **Typos on a slide kill credibility instantly — proofread every native (FR/DE) word before it
@@ -262,4 +334,20 @@ NOT applied by rewriting already-delivered content — only by improving future 
   don't "correct" it to pure German.** Words like **"rippen", "Hold-Liste", "Upside", "Standard-Ware"**
   read exactly how German TCG collectors talk online; the EN/DE mix is authentic, not a translation
   tell. (Binds to DE only — this is German vocabulary. For FR, Chloé uses her own French collector
-  slang; never carry these German words onto a French post.)
+  slang — see the FR list below; never carry these German words onto a French post.)
+- **FR (Chloé): native French collector diction — and the Anglicisms to avoid.** Use the genuinely
+  native terms; for borrowed ones, prefer the French equivalent (verified 2026-06-04 via Poképédia /
+  Pokécardex / FR lexicons):
+  - ✅ native FR: **"scellé"** (sealed), **"display"**, **"la cote"** (market value).
+  - ⚠️ prefer the FR term over the Anglicism: **"carte à l'unité"** > "single"; **"Banger" / "carte
+    chase"** > bare "chase"; **"rip / ripper"** is informal English-borrowed streamer slang ("rip and
+    ship") — use sparingly, not as standard French.
+  - **French Pokémon names on FR posts (never the English name):** **Amphinobi** (Greninja),
+    **Gallame** (Gallade), **Crocorible** (Krookodile). Look up any other Pokémon's FR name at run time.
+  - **Mega ex formatting:** prefer the official hyphenated prose form **"Méga-Amphinobi-ex"** (used by
+    pokemon.com France); marketplaces also write **"Méga-Amphinobi ex"** with a space — both are seen,
+    so don't claim the hyphenated form is the only correct one.
+- **Banned promo words (FR / Chloé) — never on a slide or in a caption:** **"code promo", "-10%", "le
+  meilleur site", "achetez", "sponso".** They turn a collector post into an ad. (The *principle* — no
+  overt promo / ad-speak — is universal; these literal words are FR-only. DE has its own to avoid:
+  "kauf jetzt", "Rabattcode", "bestes Shop", "Werbung".)
