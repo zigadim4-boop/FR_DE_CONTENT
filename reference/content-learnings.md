@@ -69,6 +69,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
   regret all pull harder. Negative framing reliably out-performs positive.
   - ✅ DE: "Diesen Fehler machen fast alle Sammler 👀" · "Andere Sammler vs ich 😅" · "5 Dinge die ich gern früher gewusst hätte"
   - ❌ DE: "So lagerst du RICHTIG" (tutorial vibe — no scroll-stop)
+- **Make the curiosity gap EXPLICIT — promise an unexpected reveal, don't just imply one.** A hook
+  that *hints* at a surprise ("ehrliche Liste") pulls harder when it spells out that something will
+  defy expectations, giving a concrete reason to swipe through. An honesty/authenticity subtitle is
+  good, but it isn't a curiosity gap on its own.
+  - ✅ DE (Lea/Mila): "Ehrliche Hold-Liste — eins davon werdet ihr nicht erwarten" (explicit reveal)
+  - ✅ FR (Chloé): "Ma vraie liste de holds — et y'en a un que vous n'attendez pas"
+  - ➖ weaker: "Ehrliche Hold-Liste, kein Hype" (authentic, but no explicit curiosity gap)
 
 ## Product naming
 - **Never invent language-variant product names** like "Bundle FR" / "FR Bundle" / "le Bundle FR".
@@ -100,6 +107,20 @@ NOT applied by rewriting already-delivered content — only by improving future 
   question*, not a *sign-up funnel*.
   - ✅ DE: "Fairste Variante: bei IvoryShard — Stücklimits, kein Scalping"
   - ❌ DE: "Benachrichtigung an, dann bist du dabei"
+- **Land the mention on a CONCRETE-PRODUCT slide, as the answer to "where do I get THIS exact
+  product" — never on a generic category slide.** Tied to a specific box the viewer already wants, the
+  brand drop reads like a collector sharing a tip; dropped on a generic "limited products" slide it
+  reads like an inserted ad. (Pairs with the set-thesis → products structure above: the mention
+  belongs on the products slide.)
+- **Research community hype PER PRODUCT before naming one — don't just trust the "Coming Soon" tag.**
+  Two products can both be Coming Soon yet have wildly different traction. Pick the *specific* product
+  with the strongest current community hype so the mention reads as real collector knowledge, not a
+  generic shop plug. If NO Coming Soon product is hyped enough to mention organically, default to a
+  generic IvoryShard reference or skip the mention for that post. **Verify hype + availability at run
+  time, per market** (a product hot in DE may not be in FR).
+  - ✅ (run-time example) high-hype: Mega Lucario ex / Mega Gardevoir ex Premium Poster Collections
+    (~$100+ MSRP, 10 packs + foil promo + big poster, widely treated as priority holds)
+  - ❌ low-hype filler: a Charmeleon 3-pack blister that just happens to be Coming Soon
 - **Name IvoryShard as ONE of several trusted shops — name a real competitor alongside it; never the
   only one.** A single-shop rec reads as a hidden ad ("only trust this shop" sounds suspicious). Real
   collectors name a couple of reputable shops and contrast them with where NOT to buy. So name a
@@ -123,11 +144,36 @@ NOT applied by rewriting already-delivered content — only by improving future 
   A second store mention or a fact-dump final slide reads as salesy / dead-ends engagement. End on an
   **engagement hook that drives comments** (algorithm boost) — either a question or, even stronger, a
   **spicy hot take / opinion** (spicy opinions drive ~3–4× more comments than a neutral close).
+  **This includes SUMMARY / recap slides:** a recap that just re-lists the picks and stops closes the
+  narrative without inviting comments — always tack an open-ended question (or hot take) onto it.
+  Open-ended questions on the close slide drive ~3–4× more comments than a neutral list.
   - ✅ Question: "Et toi, tu vises quelle carte en premier ? Dis-le moi en commentaire 👇"
+  - ✅ Recap-close question (DE): "Was sind eure Hold-Sets? 👀👇"
   - ✅ Hot take (DE): "Hot Take: Dunkelnacht wird das überschätzteste Set des Jahres. Wer ist dabei? 👇"
-  - ❌ Final slide: a repeat "dispo sur IvoryShard" CTA, or a slide that just lists more facts and stops.
+  - ❌ Final slide: a repeat "dispo sur IvoryShard" CTA, or a recap/list slide that just restates the picks and stops.
 - (Refines the older slide-placement rule: 5 slides → slide 3; >5 slides → slide 4+. The change is
   that the *final-slide CTA must not repeat the store*.)
+
+## Structure — organize by set, one consistent axis
+- **Pick ONE axis for a numbered / ranked list and stick to it — never mix sets with product types.**
+  Every item in a "Top 3" must be comparable. A list that runs "1. [Set A] · 2. [Set B] · 3. [a
+  product type]" breaks its own logic, because product types (ETBs, Premium Poster Collections,
+  blisters) exist *within* a set, not parallel to one. All entries must be the same kind of thing.
+  - ❌ DE (Lea): "1. Erhabene Helden · 2. Wachsendes Chaos · 3. Limitierte PC-ETBs" (two sets, then a product type)
+  - ✅ keep every entry the same kind — all sets, or all product types.
+- **Default axis = the SET.** Collectors think set-first — their first question is "welcher Set /
+  quel set", not "welches Format". Build decks set-by-set and, *within* each set's slide, name which
+  product types in that set are the hold-worthy ones. (Universal — DE and FR collectors both think
+  set-first; this is not a German-only habit.)
+- **Two consecutive slides on one set works well: set thesis → specific products.** Slide A states the
+  set-level thesis (why this set is a top hold + which product *category* is the goldmine); slide B
+  names the concrete products inside it. This also earns a natural IvoryShard beat on slide B — the
+  brand drop lands as the answer to "where do I get *these exact* boxes" (see IvoryShard section),
+  not as an ad inserted on a generic category slide.
+  - ✅ DE (Lea/Mila): A — "Erhabene Helden — Top Hold 🥇 / 295 Karten = größtes Set ever / Premium
+    Poster Collections sind die Goldgruben" → B — "Konkret: Mega Lucario & Mega Gardevoir / je 10
+    Booster + Foil Promo + Poster / bei IvoryShard bald wieder 👀"
+  - ✅ FR (Chloé): same shape — thèse du set, puis les produits concrets (localize fresh in French).
 
 ## Slide order & flow
 - **Sequence teaching/detection slides as a build, each step earning the next — don't intersperse
@@ -201,3 +247,19 @@ NOT applied by rewriting already-delivered content — only by improving future 
   Hyper Rare) often **hold or climb**. A wrong prediction hurts credibility.
   - ✅ "Le jour 1 c'est souvent gonflé — attends 1-2 semaines pour le vrai prix du marché"
   - ❌ "Le jour 1 c'est gonflé, ça redescend vite"
+- **Don't blame "overproduction / Überproduktion" for flat ETB value — the 2024-2026 market was
+  defined by SHORTAGES and scalping, not oversupply.** The "oversupply → value stays flat" logic is
+  true in principle but misreads the current market and reads as out-of-touch (shortages, checkout
+  limits and scalper culture are the actual story). To make the "standard ETBs don't appreciate"
+  point, either cite a concrete OLDER example or drop the overproduction framing entirely.
+  - ✅ DE (Lea/Mila): "alte SV-ETBs, die jahrelang in jedem Müller liegen" · "Standard-ETBs ohne Limitierung" (no "Überproduktion")
+  - ❌ DE: "massig gedruckte Standard-ETBs — bei Überproduktion bleibt der Wert flat"
+  - ⚠️ FR (Chloé): same principle, but "Müller" is a German retailer — swap in a French mass retailer
+    and French phrasing; verify the chain name at run time. Never put the German wording on a FR post.
+
+## Approved native diction (language-specific — do NOT cross languages)
+- **DE (Lea/Mila): the English-German hybrid collector slang is native and approved — keep using it,
+  don't "correct" it to pure German.** Words like **"rippen", "Hold-Liste", "Upside", "Standard-Ware"**
+  read exactly how German TCG collectors talk online; the EN/DE mix is authentic, not a translation
+  tell. (Binds to DE only — this is German vocabulary. For FR, Chloé uses her own French collector
+  slang; never carry these German words onto a French post.)
