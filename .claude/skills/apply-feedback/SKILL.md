@@ -57,12 +57,26 @@ not to use memory). This skill turns feedback into durable rules there.
      wording, slang, diction, spelling, or localized-name feedback:** for those the safe default is
      **language-bound** (DE → Lea + Mila; FR → Chloé).
 
-4. **Write it into `reference/content-learnings.md`.**
+4. **Dedupe FIRST — read the whole file and classify every point before you write anything.** Open
+   `reference/content-learnings.md` and read it IN FULL (a real read, not a keyword grep — related
+   rules are often worded differently than the feedback). Then classify EACH distinct point in the
+   feedback against what's already there:
+   - **already-covered** — an existing rule already says this → **skip it, add nothing.** Do not
+     restate the same lesson in fresh words; a near-duplicate is worse than no rule.
+   - **partial-overlap** — a related rule exists but this adds a *distinct* goal → **widen that rule
+     in place**, don't bolt a near-duplicate beside it.
+   - **genuinely-new** — no existing rule covers it → add it under the right section.
+   Feedback very often repeats a lesson the user already gave, or one an earlier persona's feedback
+   already produced — catching that is the whole point of this step, and the user has explicitly asked
+   not to have the same rule logged twice. When the batch is large or you're unsure how much is already
+   covered, make the classification **explicit** before editing (a quick written audit, or fan out a
+   Workflow / sub-agent dedup pass over the file).
+
+5. **Write only the genuinely-new and widened rules into `reference/content-learnings.md`.**
    - Add under the right section, or create a new section heading if none fits.
-   - **Dedupe / merge** — if a related rule exists, refine it instead of adding a duplicate. If a new
-     principle **partially overlaps** an existing rule but adds a *distinct* goal (e.g. "close on an
-     engagement question" vs "close by teasing the next slide"), widen the existing rule to cover both
-     goals — don't silently overwrite it or bolt on a near-duplicate.
+   - **Merge, never duplicate** — widen the related rule identified in step 4 to cover the new distinct
+     goal (e.g. "close on an engagement question" vs "close by teasing the next slide" → one rule that
+     covers both); never silently overwrite it or add a near-duplicate beside it.
    - Keep each rule tight and include a **✅ good / ❌ bad** example, **tagged by language** (DE/FR),
      when possible — concrete examples are what make the rule land in future runs. A language-specific
      fact must be written so it can NEVER be read as universal (tag it; name the personas it binds to).
@@ -71,13 +85,17 @@ not to use memory). This skill turns feedback into durable rules there.
    - If the feedback **overrides** an existing instruction (in `daily_content.md` or `CLAUDE.md`),
      say so explicitly in the rule ("This OVERRIDES …") so future runs don't fall back to the old way.
 
-5. **If a fact needs checking** before it can go on a slide (a price, a superlative like "the only
-   X", a localized name or release date) — note in the rule that it must be verified at run time
-   **per language** (WebSearch/WebFetch are free).
+6. **Verify factual claims — in the feedback itself, and for run time.** If the feedback asserts a
+   fact (a set name, a JP-vs-localized mapping, a card count, a release date, a price, a superlative
+   like "the only X"), **verify it before logging it as a durable fact** — WebSearch/WebFetch are free.
+   If verification contradicts the feedback's framing, **log the verified version and tell the user**;
+   getting the fact right matters more than transcribing the note verbatim. For facts that drift
+   (prices, stock, localized names), note in the rule that they must be re-verified at run time **per
+   language**.
 
-6. **Confirm back to the user**, briefly: what rule you added/updated, **which personas it applies to**
-   (all three, or one language only), and that it'll apply to future runs. Don't ask them to do
-   anything else.
+7. **Confirm back to the user**, briefly: what you added/updated, **which personas it applies to** (all
+   three, or one language only), **and which points you SKIPPED as already-covered** (so they can see
+   nothing was duplicated). Note it'll apply to future runs. Don't ask them to do anything else.
 
 ## Notes
 - `reference/content-learnings.md` is the single source of truth for content rules and is wired into
