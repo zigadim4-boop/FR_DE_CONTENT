@@ -16,8 +16,12 @@ Mila is a genuine A/B test against Lea: same German market is fine, but she must
 - `reference/content-formats.md` — format library (+ the 3 burned formats to avoid)
 - `reference/market-stock-logic.md` — the CTA decision matrix
 - `reference/market-intel.md` — living releases + value/price data
+- `reference/examples/` — **screenshots of real carousels that performed well** (the user's curated
+  winners, e.g. `french/ss1…`, `germany/ss1…`). STUDY these as images for the **style, tone, structure
+  and what makes a deck engaging** — they are the BAR for "fun / different / unique". **Never copy their
+  content or topics** — be creative and original.
 - Live read of **ivoryshard.com** (stock + restock signals)
-- Fresh **TCG news + prices** (web)
+- Fresh **TCG news + prices** (web) — see the daily news sweep in Step 2
 
 ## How this runs now (Trigger.dev + scheduled Claude Code)
 You (Claude Code) are the **brain**, running on a daily schedule. You do the free reasoning
@@ -54,8 +58,15 @@ cards + the announcement bar.
   articles. Only look for what's **new** since `market_knowledge_updated_at`.
 - **Prices:** trigger **`fetch-prices`** with the relevant card/product names (CardTrader/eBay) —
   use this instead of web-searching prices.
-- **News only:** `WebSearch`/`WebFetch` the sources in `market-intel.md` for genuinely new set news,
-  drops/restocks, what to **hold** vs **brick**, chase-card narratives (global + FR + DE).
+- **News sweep (DO THIS THOROUGHLY — relevance is the #1 quality lever):** `WebSearch`/`WebFetch`
+  hard for **genuinely fresh, TODAY-relevant** Pokémon TCG news. Don't do a token sweep — run multiple
+  targeted searches and actually stay on top of the cycle:
+  - **New SET LEAKS, reveals, and fresh Pokémon/TCG announcements** (the user confirmed these perform
+    especially well) — upcoming sets, leaked card lists/chase cards, official reveals, release-date news.
+  - Drops / restocks, what to **hold** vs **brick**, chase-card narratives — **global + FR + DE**.
+  - Search **date-bounded** ("this week", current month/year) and hit the FR/DE sources too, not just EN.
+  - Goal: every deck is anchored to something **current and relevant**, not evergreen filler. If big
+    news broke today, that's likely the day's topic.
 - **Read `reference/market-intel.md`** (human-curated viral examples — you read it, never overwrite).
 - **Persist what you learned** into `market_knowledge` (passed to `daily-content`/`save-state` at the
   end) so tomorrow's run starts smarter.
@@ -69,6 +80,18 @@ From `content-formats.md`, choose a format for **each of the three personas** (L
 - **All three scripts must use distinct formats/angles** — never the same script twice. This includes **Lea vs Mila** (both German): they share the market but must differ in format (ideally tone too — that's the A/B test). The linter blocks duplicate formats.
 - Avoid repeating a persona's format from the last ~10 days — use the `recent_formats` returned by
   **`get-state`** (Step 2) to see what each persona has already used.
+
+### 4.5 Study the winning examples (the style/quality bar)
+**Before writing, actually OPEN the screenshots in `reference/examples/` (read them as images — they
+are PNGs) and study what makes them work:** topic choice, hook, tone, pacing, slide structure/format,
+and why a viewer would stop and save. These are the user's real winners and the bar for "fun /
+different / unique".
+- **Emulate the STYLE and quality, never the content.** Do NOT reuse their topics, hooks, or wording —
+  be creative and original (see the examples-are-templates rule in `content-learnings.md`). Copying a
+  winner's topic is a failure, not a win.
+- Use them to sanity-check today's angle: if your planned topic feels weaker/duller than these, pick a
+  better one (lean on the fresh news from Step 2 and the confirmed interesting angles in
+  `content-learnings.md`).
 
 ### 5. Write the scripts (English-first; native ONLY for on-slide text)
 **Before writing, re-read `reference/content-learnings.md` and apply EVERY rule in it** (it captures
@@ -94,8 +117,8 @@ payload for the `daily-content` task. (No local file needed; nothing persists to
 ### 6. Self-check the draft (draft → lint → fix → repeat)
 Treat the first JSON as a **draft**, not the final. Don't render or send until it's clean.
 1. **Lint it:** trigger **`lint-content`** with the JSON (or run a `daily-content` call with
-   `dryRun: true`). It deterministically checks the mechanical rules (>=5 content slides, 2–4 bullets
-   each, English parallel present, **no numeric pull-rate/odds on a slide**, **no "verify…before
+   `dryRun: true`). It deterministically checks the mechanical rules (>=5 content slides, 0–4 bullets
+   each (bullets optional), English parallel present, **no numeric pull-rate/odds on a slide**, **no "verify…before
    filming" offload note**, **IvoryShard placement** = slide 3 on a 5-slide deck / slide 4+ on a
    longer one, **no duplicate formats**, and warns if a **restock-alert CTA** is used for an in-stock
    product).
@@ -157,7 +180,7 @@ notes. Title page = header (date, in-stock, coming-soon, banner/restock signal) 
   ]
 }
 ```
-- Every content slide needs a **title + 2–4 bullets** (match the density in `examples/`). **≥5 content slides.** Slide 1's "title" is the hook (it can have no bullets).
+- Every content slide needs a **title**; **bullets are OPTIONAL (0–4, aim ≤3)** — not every slide must be a bullet list. A slide can be one punchy line or a reveal with no bullets (see the "bullets are one tool, not a mandate" rule in `content-learnings.md`). **≥5 content slides.** Study `reference/examples/` for **style & format**, not just bullet density.
 - `direction` and `shot_list` are English notes for the user; everything the viewer sees lives in `title`/`bullets` (native).
 - No `caption`/`hashtags`/`voiceover` fields — intentionally dropped for now.
 

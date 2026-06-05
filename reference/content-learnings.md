@@ -17,8 +17,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
   feedback created the rule.** Craft principles (hook style, slide order, IvoryShard integration,
   honesty, engagement closes, topic relatability, pacing, depth) are language-agnostic.
 - **✅/❌ examples are language-tagged TEMPLATES, not the rule itself.** An example shown only in DE or
-  FR just illustrates the principle. **Never copy an example's wording across languages** — rewrite it
-  fresh in the target persona's own language.
+  FR just illustrates the principle. **Never copy an example's wording — not across languages, AND not
+  verbatim into a real script even within the same language.** The examples teach the PRINCIPLE; every
+  run must invent its OWN fresh topic and hook. **Shipping a file example as the actual hook — e.g.
+  building a whole deck around "Andere Sammler vs ich" because it appears here as an illustration — is a
+  FAILURE, not a win.** A hook the user once praised *as an example* is a direction to imitate in
+  spirit, never a script to reuse word-for-word — and a format must never be mechanically filled in
+  ("andere: blabla / ich: blabla" on every slide).
 - **A rule is language-specific ONLY when its substance is a fact, spelling, name, or wording of one
   language** (a translation, slang, a localized set name like "Dunkelnacht", a typo fix). Those bind
   to that language's personas: **German → Lea + Mila; French → Chloé.** Never apply a German
@@ -32,6 +37,31 @@ NOT applied by rewriting already-delivered content — only by improving future 
   vocabulary rule universal.
 
 ## Topic & angle selection — relatable to every collector
+- **Every deck must be a SPECIFIC, genuinely interesting topic — never random filler, never a template
+  mechanically filled in.** If the topic and the slide text feel random, irrelevant, or generic,
+  viewers scroll past. Start from a real reason-to-care (a current drop / news, a live debate, a
+  concrete relatable struggle, a verifiable card delta) and make EVERY slide earn attention with real
+  substance. Do NOT pick a format and pour generic text into its shape — the format is a frame, the
+  substance has to be real and relevant. (Pairs with "make every slide save-worthy" and the
+  examples-are-templates rule in Scope.)
+  - **"Interesting" is judged by the USER, never assumed — a technical / encyclopedic angle is NOT
+    automatically interesting.** A JP-vs-DE **card-delta / card-list** angle, dry set trivia, or
+    spec-sheet facts are the kind of topic the user has explicitly flagged as **boring** — most
+    collectors don't care about checklist minutiae. Anchor real interest in the user's curated example
+    screenshots (`reference/examples/`) and the live narrative hooks in `market-intel.md`, not in dry
+    set facts. (See the user-confirmed "interesting angle" list below — keep it updated from feedback.)
+  - ❌ DE: a generic "Andere Sammler vs ich" deck of "andere: blabla / ich: blabla" with no real topic; OR a dry encyclopedic angle (card-list deltas, set trivia) no normal collector cares about.
+- **✅ Confirmed INTERESTING angles (user-validated 2026-06-05 — these genuinely pull; applies to all
+  three personas). Maintain this list from feedback:**
+  - **Personal / relatable POV** — pull reveals, "my real holds", collector struggles, regrets,
+    "wish I knew". Story-driven and human, not a checklist.
+  - **Timely news / drops — ESPECIALLY a new set LEAK or fresh Pokémon news.** Reacting fast to
+    brand-new info performs especially well; lean on the "new + you might not know this yet" hook.
+  - **The curated `reference/examples/` screenshots are real winners — they are the BAR for what
+    "fun / different / unique" looks like.** Study them for topic, tone AND format; emulate the vibe,
+    never copy verbatim (see Scope). When unsure whether a topic is interesting, compare it to these.
+  - ❌ already-flagged-boring (do NOT use): card-list deltas / JP-vs-DE checklist minutiae, set trivia,
+    spec-sheet facts.
 - **Pick topics that land with the WHOLE collector base, not a narrow slice.** Investor-only angles —
   long-term **sealed storage**, deep ROI / spec plays — interest a small segment and cap reach.
   Default to angles every collector feels. (Niche is the exception, not the default.)
@@ -83,6 +113,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ DE (Lea/Mila): "Ehrliche Hold-Liste — eins davon werdet ihr nicht erwarten" (explicit reveal)
   - ✅ FR (Chloé): "Ma vraie liste de holds — et y'en a un que vous n'attendez pas"
   - ➖ weaker: "Ehrliche Hold-Liste, kein Hype" (authentic, but no explicit curiosity gap)
+  - **Naming the set/topic in the hook is fine — but it can't REPLACE the loop.** A "favorite card"
+    or preference hook that just names the set reads flat and descriptive; it needs a one-line
+    **subverted expectation** to create tension (the obvious pick is wrong, the chase isn't the answer).
+    Keep it to ONE short line. (Same lesson as the comparison rule below, generalized to any format.)
+    - ✅ FR (Chloé): "Ma carte préf de Chaos Ascendant, et c'est pas la chase" (set named + twist = the loop)
+    - ✅ DE (Lea/Mila): "Meine Lieblingskarte aus Wachsendes Chaos, und es ist nicht die Chase"
+    - ❌ FR: "Mes cartes préf de Chaos Ascendant, et une que personne calcule" (two lines, flat, no twist/tension)
 - **A hook must carry real stakes — never a neutral preference question, and never undersell its own
   value.** "Which do you prefer? / tu prends quoi ?" is flat (no tension); "I'll quickly compare them
   / je te fais le comparatif vite fait" deflates the payoff before you deliver it. Open a loss /
@@ -126,7 +163,11 @@ NOT applied by rewriting already-delivered content — only by improving future 
 - **Frame the shop as the answer to "where do I get this?", as a collector's tip — never as a
   marketing CTA.** "Benachrichtigung an, dann bist du dabei" / "sign up for notifications" reads as a
   brand account selling, not a person sharing where they buy. Make the shop the *answer to a buying
-  question*, not a *sign-up funnel*.
+  question*, not a *sign-up funnel*. **Frame it as "where I buy" — NOT a hard "available right now /
+  in stock" claim.** A real-time stock assertion ages badly (stock drifts) and reads salesy; say where
+  *you* order, not that it's in stock this second.
+  - ✅ FR (Chloé): "Moi je commande à la source, scellé, en €" (where I buy)
+  - ❌ FR: "Dispo maintenant sur IvoryShard, fonce" (hard live-stock claim)
   - ✅ DE: "Fairste Variante: bei IvoryShard — Stücklimits, kein Scalping"
   - ❌ DE: "Benachrichtigung an, dann bist du dabei"
 - **The shop beat must not CONTRADICT an earlier slide.** If a slide says the set is easy to find
@@ -225,6 +266,14 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ FR (Chloé): "La FR a 2 cartes que la JP n'a pas…" → next slide names them.
   - ✅ DE (Lea/Mila): "Eine davon ist fast unauffindbar 👀" → next slide reveals which.
   - ❌ self-contained slides that each fully close their point (no reason to swipe on).
+- **Every slide does ONE distinct job — never make the same point on two slides, and state a recurring
+  takeaway only ONCE.** A deck where several mid-slides all circle the same conclusion (e.g. "don't buy
+  the single day one / wait for market value") wastes slides on one idea and stalls the build. Give each
+  slide a unique role, and keep a repeated conclusion (like "wait 1-2 weeks for the real price") to a
+  SINGLE slide — the action / penultimate one — not sprinkled across the deck.
+  - ✅ DE (Lea/Mila): slide 3 = warum der Release-Preis fake ist (Hype, Scalper) · slide 4 = Chase-Ranking · slide 6 = der konkrete Move, mit "1-2 Wochen warten" NUR hier
+  - ❌ DE: Slides 3, 4 und 6 sagen alle dasselbe ("kauf das Single nicht am Day 1, warte auf den Marktwert")
+  - ✅ FR (Chloé): chaque slide un rôle unique, et le "attends 1-2 semaines" une seule fois, sur la slide action
 - **The action / penultimate slide gives a concrete action, not passive advice.** After teaching
   techniques, "au pire tu attends" / "just wait" is anticlimactic. End the value on a do-this
   takeaway; keep "the set is available everywhere" as light reassurance, not the headline.
@@ -232,6 +281,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ❌ FR: "Au pire tu attends" (passive, deflating after 5 techniques)
 
 ## Make every slide save-worthy (depth, not generic advice)
+- **"Value" / a "value carousel" = USEFUL, fun, different, UNIQUE info — NOT prices, and NOT basic
+  info. [User clarification, 2026-06-05.]** When the user asks for "value" content they mean real
+  substance the viewer doesn't already know: a fresh, fun, unique take or insight — never price tags,
+  never obvious beginner facts. **"Value" ≠ "prices":** prices are welcome when the TOPIC itself is
+  worth/price (see Prices section), but a value carousel is about uniqueness and usefulness, not numbers.
+  - ✅ a non-obvious insight, a surprising reveal, an angle nobody else is posting.
+  - ❌ basic/obvious info ("sleeve your cards"), or a deck that's really just a list of prices.
 - Give the **"why"** behind advice — the mechanism, not the obvious rule.
   - ✅ "Loin du soleil : les UV ternissent" / "Au sec : l'humidité gondole & moisit"
   - ❌ "Loin du soleil et de l'humidité"
@@ -279,10 +335,23 @@ NOT applied by rewriting already-delivered content — only by improving future 
       **"Chaos Ascendant"** (Chloé), DE **"Wachsendes Chaos"** (Lea/Mila — verify at run time). The
       Japanese set is **"Ninja Spinner"** — never the FR/EN/DE name. Card names are localized too
       (FR Méga-Amphinobi-ex; DE/EN use their own) — use HER market's card names, verified per language.
+    - **AZ's Tranquility (in Chaos Ascendant) — confirmed, no "correction" needed** (verified
+      2026-06-05 via Bulbapedia/Serebii): a **Supporter SIR**; the SIR art shows **AZ reunited with his
+      Eternal Flower Floette** (lore accurate — pairs with the "emotional/lore context" rule). **On FR
+      posts the character is spelled "A-Z" (with the hyphen) — that is the correct French spelling, do
+      NOT change it to "AZ".** EN card name is "AZ's Tranquility"; look up the official **FR** card name
+      at run time (don't hardcode/guess it).
 - (Reinforces the superlative-verify rule above and the FACTUAL ACCURACY gate in `daily_content.md`:
   official set names/dates are slide-safe **only after you confirm them that day**.)
 
 ## Bullet consistency & pacing
+- **Bullets are ONE tool, not a mandate — don't force every slide into "title + bullet list".
+  [User note, 2026-06-05.]** A slide can be a single punchy line, a reveal, or a short story beat with
+  NO bullets at all (the title / line carries it). Vary the structure across the deck so it feels
+  natural and hand-made, not a templated bullet-grid. **This RELAXES the "every content slide needs
+  title + 2-4 bullets" line in `daily_content.md`** — bullets are a default, not a requirement on every
+  slide; the JSON allows 0 bullets, so use a title-only slide when it reads better. (Pairs with "don't
+  mechanically fill a template".) The rules below still apply WHENEVER you do use bullets.
 - **One short title per slide, and a HARD maximum of 3 bullets** (never more than 3). **Keep bullets
   uniform in length and structure across slides** so the whole deck reads at one steady pace. Slides
   drifting between 3-word fragments and full sentences makes the carousel feel uneven. Aim for the
@@ -292,13 +361,19 @@ NOT applied by rewriting already-delivered content — only by improving future 
   "außerdem" (DE) / "et", "ainsi que", "en plus" (FR). Each bullet = one idea, telegram-style.
   - ✅ DE bullets: "16.09.2026 — weltweit gleichzeitig" · "Erstes Set dieser Art" · "Riesiger Hype-Runway"
   - ❌ DE bullet: "Das Set erscheint im Oktober und passend zum Jubiläum gibt es dazu noch …"
-- **Bullets are plain phrases — no in-bullet symbols, no "label : value" structuring.** Hard ban:
-  **arrows (→) and angle brackets (<>)** never belong in a bullet; and **don't build a bullet as
-  "Label : explication"** — it reads like a spec sheet, not a person talking. (Naturally-reading
-  exceptions: a short price tag like "La SIR : ~50-150€", and the short *title* above the bullets. A
-  normal em dash in running text is fine — the ban is arrows / angle brackets / label-colons.)
-  - ✅ FR bullet: "repère les vendeurs sérieux"
-  - ❌ FR bullet: "Système d'évaluation : repérer les vendeurs sérieux" (label:value, too structured)
+- **Carousel slides are CLEAN SHORT SENTENCES — no symbols, no emojis (hard ban). [Newest feedback,
+  2026-06-05 — applies to BOTH/ALL personas.]** On every slide (title AND bullets) ban: **em/en dashes
+  (— –), `=`, `+`, `:`, arrows (→), angle brackets (<>)**, and **ALL emojis** (👀 😅 📌 👇 🥇 …). Write
+  each line as a plain short sentence or phrase, one idea per line — never a "Label : value" spec-sheet
+  structure, never decorative symbols joining ideas. **This OVERRIDES the older carve-outs in this file:
+  the "a normal em dash in running text is fine" and "price tag like `La SIR : ~50-150€`" exceptions are
+  REVOKED, and the emojis/symbols shown in older ✅ examples throughout this file (hooks, closes, recaps)
+  are SUPERSEDED — copy those examples' wording and angle, NEVER their emojis or symbols.** Prices stay
+  welcome (see Prices section) — just phrase them as words, not with `:`/`=`/`~`.
+  - ✅ FR (Chloé): "Repère les vendeurs sérieux" · "La SIR tourne autour de 50 à 150€"
+  - ❌ FR: "Système d'évaluation : repérer les vendeurs sérieux" · "La SIR : ~50-150€ 👀"
+  - ✅ DE (Lea/Mila): "Achte auf seriöse Verkäufer" · "295 Karten, das größte Set aller Zeiten" · "Hot Take, Dunkelnacht wird überschätzt. Wer ist dabei?"
+  - ❌ DE: "Bewertung → seriöse Verkäufer 👀" · "295 Karten = größtes Set ever" · "10 Booster + Foil Promo + Poster"
 
 ## Proofread the native text
 - **Typos on a slide kill credibility instantly — proofread every native (FR/DE) word before it
