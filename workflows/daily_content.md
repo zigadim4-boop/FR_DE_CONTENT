@@ -117,7 +117,7 @@ payload for the `daily-content` task. (No local file needed; nothing persists to
 ### 6. Self-check the draft (draft → lint → fix → repeat)
 Treat the first JSON as a **draft**, not the final. Don't render or send until it's clean.
 1. **Lint it:** trigger **`lint-content`** with the JSON (or run a `daily-content` call with
-   `dryRun: true`). It deterministically checks the mechanical rules (>=5 content slides, 0–4 bullets
+   `dryRun: true`). It deterministically checks the mechanical rules (4–5 content slides = 5–6 total incl. the CTA, 0–4 bullets
    each (bullets optional), English parallel present, **no numeric pull-rate/odds on a slide**, **no "verify…before
    filming" offload note**, **IvoryShard placement** = slide 3 on a 5-slide deck / slide 4+ on a
    longer one, **no duplicate formats**, and warns if a **restock-alert CTA** is used for an in-stock
@@ -180,7 +180,7 @@ notes. Title page = header (date, in-stock, coming-soon, banner/restock signal) 
   ]
 }
 ```
-- Every content slide needs a **title**; **bullets are OPTIONAL (0–4, aim ≤3)** — not every slide must be a bullet list. A slide can be one punchy line or a reveal with no bullets (see the "bullets are one tool, not a mandate" rule in `content-learnings.md`). **≥5 content slides.** Study `reference/examples/` for **style & format**, not just bullet density.
+- Every content slide needs a **title**; **bullets are OPTIONAL (0–4, aim ≤3)** — not every slide must be a bullet list. A slide can be one punchy line or a reveal with no bullets (see the "bullets are one tool, not a mandate" rule in `content-learnings.md`). **Deck length: 4–5 entries in `slides[]` + the `cta` (renders as the final slide) = 5–6 slides TOTAL counting the CTA. Max 6 total; 7+ is too many — aim for 5. [User feedback 2026-06-06.]** Study `reference/examples/` for **style & format**, not just bullet density.
 - `direction` and `shot_list` are English notes for the user; everything the viewer sees lives in `title`/`bullets` (native).
 - No `caption`/`hashtags`/`voiceover` fields — intentionally dropped for now.
 

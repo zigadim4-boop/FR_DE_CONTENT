@@ -5,7 +5,7 @@
  * natural). Returns errors (must fix) and warns (review).
  *
  * Rules (see workflows/daily_content.md, reference/*.md):
- *   ERRORS: missing fields; <5 content slides; a content slide (n>=2) without title or without 2-4
+ *   ERRORS: missing fields; not 4-5 content slides (5-6 total incl. the CTA); a content slide (n>=2) without title or without 2-4
  *           bullets; English parallel missing/mismatched; a NUMERIC pull-rate/odds on a slide; a
  *           "verify...before filming" offload note in a direction; IvoryShard placed too early
  *           (5 slides -> slide 3; >5 -> slide 4+); two scripts reusing the same format.
@@ -40,8 +40,14 @@ function checkScript(s: Script, store: StoreState, errors: string[], warns: stri
     }
   }
   const slides = s.slides ?? [];
-  if (slides.length < 5) {
-    errors.push(`[${who}] only ${slides.length} content slides (need >= 5)`);
+  // Deck length (user feedback 2026-06-06): 5-6 slides TOTAL counting the CTA -> slides[] must be 4-5
+  // (the cta renders as the final slide). 7+ total is too long. OVERRIDES the old ">= 5 content slides".
+  if (slides.length < 4) {
+    errors.push(`[${who}] only ${slides.length} content slides (need >= 4, i.e. >= 5 total with the CTA)`);
+  } else if (slides.length > 5) {
+    errors.push(
+      `[${who}] ${slides.length} content slides + CTA = ${slides.length + 1} total (max 6 counting the CTA; trim slides[] to 4-5)`,
+    );
   }
 
   for (const sl of slides) {

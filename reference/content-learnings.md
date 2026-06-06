@@ -100,6 +100,14 @@ NOT applied by rewriting already-delivered content — only by improving future 
   more punch — the shorter line usually out-hooks the longer one.
   - ✅ FR: "Ce scellé peut être fake 👀" (4 words, lands instantly)
   - ❌ FR: "Avant d'acheter un display, regarde ÇA 👀 / Un scellé peut être resealed — voilà comment le repérer" (4 lines)
+- **Phrase the hook as a line a real person would SAY out loud — a natural spoken sentence or question,
+  not a compressed noun-stack.** A telegraphic fragment reads as ad-copy shorthand; the same idea as a
+  spoken sentence flows like a person talking and stops the scroll harder. This is about register/flow,
+  NOT length — both can be short. (Pairs with "keep the hook short": short AND conversational, not
+  short-and-compressed.)
+  - ✅ FR (Chloé): "T'as 50 balles à mettre dans du scellé ?" (spoken, natural)
+  - ❌ FR: "50 balles de scellé" (compressed noun-stack, reads as a label)
+  - ✅ DE (Lea/Mila): write the hook as a spoken line too — localize fresh, never translate the FR.
 - **Warning / negative / comparison hooks beat positive & tutorial ones.** A "how to do X right" title
   reads as a dry tutorial and doesn't stop the scroll; a **warning** ("the mistake almost everyone
   makes"), a **curiosity gap**, a **comparison** ("others vs me"), or a personal **"wish I knew"**
@@ -254,6 +262,30 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ FR (Chloé): same shape — thèse du set, puis les produits concrets (localize fresh in French).
 
 ## Slide order & flow
+- **Hard cap on deck length: 5–6 slides TOTAL, counting the final CTA slide — 7+ is too many. Aim for
+  5, allow 6, never exceed 6. [User feedback 2026-06-06.]** In the JSON that means `slides[]` has
+  **4–5 entries** and the `cta` renders as the last slide (4 slides + CTA = 5 total; 5 slides + CTA = 6
+  total). A tight deck holds swipe-through; padding to 7–8 loses people, so trim to the strongest beats.
+  **This OVERRIDES the old "≥5 content slides / no upper limit" rule in `daily_content.md` and the
+  `lint-content` check** — the new range is 4–5 `slides[]` entries (5–6 total incl. the CTA). Universal
+  — all three personas.
+  - ✅ 5 total: hook + 3 body slides + CTA. ✅ 6 total: hook + 4 body slides + CTA.
+  - ❌ 7+ total (e.g. hook + 5 body + CTA) — too long; cut or merge slides down to 4–5 `slides[]`.
+- **The hook makes a PROMISE; every slide after it delivers a concrete piece of THAT promise, in order
+  — never pivot to a different thread.** If the hook promises a plan ("where I'd put €50 in scellé"),
+  the body IS that plan: each slide is one concrete step. The classic break: the hook promises a plan
+  but slide 2 opens with a "what NOT to do" warning, so the viewer who swiped for the WHERE gets a
+  don't-do instead and the actual pick lands too late — the hook's promise is broken.
+  - **A "trap to avoid" beat is fine as ONE step inside the plan (e.g. slide 4, "le piège à éviter"),
+    never as its own early beat that interrupts it.** Demote the warning to a single line on a plan slide.
+  - **Match the hook to the actual theme.** To make the mistake the theme instead, the HOOK must be
+    about the mistake ("La plupart claquent leurs 50 balles le jour de la sortie. Erreur.") and the
+    whole post is warning+fix. Never promise a plan and then open with a warning — pick one thread, and
+    let the hook announce the one you chose.
+  - ✅ FR (Chloé) plan thread: hook "T'as 50 balles à mettre dans du scellé ?" → slide 2 the pick → slide 3 where to buy → slide 4 the trap (one line) → slide 5 protect it → slide 6 open or keep.
+  - ✅ DE (Lea/Mila): same shape — hook promises a plan, every slide is one step of it; the "Fehler" is step 4, not slide 2.
+  - ❌ any persona: hook promises a plan, slide 2 pivots to a standalone day-one warning, the pick only shows on slide 3.
+  - (Deck-level cousin of the slide-level "heading must deliver what it promises": there it's one slide's heading↔bullets, here it's the hook↔the whole body.)
 - **Sequence teaching/detection slides as a build, each step earning the next — don't intersperse
   redundant points.** For a "how to spot X" deck: **physical signs → behavioral signs → market signs
   → action plan → engagement close.** Group similar checks together; a market/behavior point dropped
@@ -293,8 +325,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ❌ "Loin du soleil et de l'humidité"
 - Give cards **emotional/lore context** so their significance lands.
   - ✅ AZ's SIR: "Réuni à sa Floette après des millénaires 🥲"
-- Verify any **superlative** ("only Trainer SIR in the set") before putting it on a slide; if you
-  can't confirm it 1000%, use a verifiable phrasing instead.
+- Verify any **superlative or comparative claim** ("only Trainer SIR in the set", "the cheapest entry
+  point", "biggest set ever") before putting it on a slide; if you can't confirm it 1000%, **soften to
+  a defensible phrasing ("one of the…")** rather than dropping the point. **Price/entry superlatives are
+  a recurring trap** — a smaller product almost always undercuts the one you name (a 3-pack blister is
+  cheaper than a 6-pack bundle), so "the cheapest" is usually false.
+  - ✅ FR (Chloé): "un des points d'entrée les moins chers en scellé"
+  - ❌ FR: "le point d'entrée le moins cher en scellé" (a 3-pack blister is cheaper — overclaimed)
 
 ## Dates, names & set facts — get them exact
 - **Never approximate a release date when an exact official one exists.** "Im Oktober" / "around
@@ -379,6 +416,14 @@ NOT applied by rewriting already-delivered content — only by improving future 
 - **Typos on a slide kill credibility instantly — proofread every native (FR/DE) word before it
   ships.** A misspelling signals "not a native / not careful," exactly the opposite of the persona.
   - ❌ FR: "partou" → ✅ "partout"
+- **Use ONE term per concept across the whole deck — don't alternate synonyms slide to slide.** If the
+  hook uses one word for a thing, every later slide uses the SAME word; switching reads as careless and
+  non-native. Pick the term on the first slide and repeat it. (WHICH term to prefer is the diction
+  rule's job — FR: "scellé" over "sealed", see the native-diction section. This is the separate point
+  that, once chosen, the term must stay consistent — applies to all personas, e.g. DE mustn't mix
+  "sealed"/"versiegelt" either.)
+  - ✅ FR (Chloé): "scellé" on the hook AND every later slide.
+  - ❌ FR: "en sealed" on the hook, "en scellé" on slide 3 (two words for one thing).
 
 ## Prices on slides — concrete is wanted
 - **Put concrete price reference points on slides.** The user explicitly prefers real tiers/ranges
