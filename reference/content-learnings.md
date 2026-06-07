@@ -211,11 +211,22 @@ NOT applied by rewriting already-delivered content — only by improving future 
   **Verify any named competitor is real, reputable IN THE PERSONA'S MARKET (DE for Lea/Mila, FR for
   Chloé), and correctly spelled at run time** before it hits a slide — a shop known in one country may
   be unknown in the other, so don't assume Fuji Store (or any peer) serves both markets.
+  **IvoryShard is the CONSTANT; the peer shop must ROTATE day to day. [Standing rule 2026-06-07.]**
+  Don't pair IvoryShard with the same second shop (e.g. Fuji Store) every time — alternate across
+  different real, reputable shops in that market from one day to the next. An always-same pairing
+  starts to read like an arrangement rather than a collector's honest shortlist.
   - ✅ FR: "Je commande sur des shops sérieux comme Fuji Store ou IvoryShard — jamais sur Vinted ou des marketplaces louches"
   - ❌ FR: "Le booster bundle Chaos Ascendant est dispo sur IvoryShard — vrai scellé, garanti authentique" (solo promo)
 - **The shop mention is a one-line aside, never its own promo slide.** A reader going value→value→
   value→AD→value bounces at the ad. Fold the shop into a value beat (where you buy safely); don't
   give it a dedicated slide.
+- **Anti-repetition across days — drop IvoryShard ENTIRELY after the same product/market repeats.
+  [Standing rule 2026-06-07; tracked PER MARKET, FR and DE separately.]** If three scripts in a row
+  cover the SAME product on the SAME market and that market's store offering hasn't changed, the NEXT
+  TWO days on that market must be pure-value slideshows with **no IvoryShard mention at all** — built
+  purely to grow the follower base, regardless of what's in the shop. Bring the brand back only once
+  the product or stock for that market actually moves. FR (Chloé) and DE (Lea/Mila) each track their
+  own streak independently — a repeat on FR doesn't force a value-only day on DE, and vice versa.
 - **Heading must deliver what it promises (heading↔payload match).** A heading is a promise; the
   bullets must pay it off. A heading that promises entry/where-to-start advice must give entry advice,
   not just drop a shop name.
@@ -286,6 +297,22 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ DE (Lea/Mila): same shape — hook promises a plan, every slide is one step of it; the "Fehler" is step 4, not slide 2.
   - ❌ any persona: hook promises a plan, slide 2 pivots to a standalone day-one warning, the pick only shows on slide 3.
   - (Deck-level cousin of the slide-level "heading must deliver what it promises": there it's one slide's heading↔bullets, here it's the hook↔the whole body.)
+- **If the hook sets a STAKE, the verdict / close must PAY IT OFF — never neutralize it. [FR feedback
+  2026-06-07; universal.]** A hook that says one of two choices "tu vas regretter" / "you'll regret it"
+  promises a real downside; a closing verdict of "both valid, your call" cancels that promise and the
+  deck reads as bait-and-switch. The close must NAME the actual regret — which choice loses, and why.
+  If you're not willing to pick a side at the end, don't claim a regret in the hook. (Pairs with "Match
+  the hook to the actual theme" — same hook↔payoff discipline, applied to the final verdict slide.)
+  - ✅ FR (Chloé): hook "l'un des deux, tu vas le regretter" → verdict names it ("le garder scellé là, c'est ça que tu regretteras — voilà pourquoi")
+  - ❌ FR: hook "tu vas regretter" → verdict "les deux se valent, à toi de voir" (neutralizes the stake)
+  - ✅ DE (Lea/Mila): a "du wirst es bereuen" hook must end on the named regret, not on "beides ok".
+- **An open-vs-keep recommendation must be a clean BINARY that matches the quantity on screen. [FR
+  feedback 2026-06-07; universal.]** Against a single item, "open one and keep the rest" is ambiguous —
+  it implies several when there's only one. Make it a true either/or: open it and enjoy, OR keep it
+  sealed.
+  - ✅ FR (Chloé): "Soit tu l'ouvres et tu kiffes, soit tu le gardes scellé"
+  - ❌ FR: "Ouvre-en un et garde le reste" (ambiguous against a single bundle)
+  - ✅ DE (Lea/Mila): same clean binary — open it or keep it sealed (localize fresh).
 - **Sequence teaching/detection slides as a build, each step earning the next — don't intersperse
   redundant points.** For a "how to spot X" deck: **physical signs → behavioral signs → market signs
   → action plan → engagement close.** Group similar checks together; a market/behavior point dropped
@@ -320,6 +347,18 @@ NOT applied by rewriting already-delivered content — only by improving future 
   worth/price (see Prices section), but a value carousel is about uniqueness and usefulness, not numbers.
   - ✅ a non-obvious insight, a surprising reveal, an angle nobody else is posting.
   - ❌ basic/obvious info ("sleeve your cards"), or a deck that's really just a list of prices.
+- **A "tip" a collector already knows is filler, not value — ban self-evident truisms dressed up as
+  advice. [FR feedback 2026-06-07; universal.]** Lines like "opening is a gamble", "pulling the chase
+  from a bundle is rare", "keeping it sealed keeps your options open" state the obvious, give no reason
+  to stop or save, and waste a slide. A tip earns its slide ONLY if it tells the collector something
+  they don't already know. Default instead to something they'd actually pause on: a specific market
+  price, a leak, a fresh release, a lore detail, a timing pattern, a contrarian take, or an unexpected
+  comparison. A pure numbers slide (real pull rate, price trend) is fine once in a while, but
+  ORIGINALITY is the goal — not obvious advice in a tip's clothing. (Sharpens the value=unique rule
+  above: the trap here is the *experienced-collector* truism, not just the beginner fact.)
+  - ❌ FR (Chloé): "Ouvrir c'est un pari" · "Sortir la chase d'un bundle c'est rare" · "Le garder scellé garde tes options ouvertes"
+  - ✅ FR (Chloé): a concrete cote, a leak, a release date, a lore beat, a timing pattern, or a contrarian take instead.
+  - ✅ DE (Lea/Mila): same — no obvious truisms; lead with a price, leak, lore, pattern or hot take (localize fresh, never translate the FR).
 - Give the **"why"** behind advice — the mechanism, not the obvious rule.
   - ✅ "Loin du soleil : les UV ternissent" / "Au sec : l'humidité gondole & moisit"
   - ❌ "Loin du soleil et de l'humidité"
@@ -467,6 +506,9 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - **Mega ex formatting:** prefer the official hyphenated prose form **"Méga-Amphinobi-ex"** (used by
     pokemon.com France); marketplaces also write **"Méga-Amphinobi ex"** with a space — both are seen,
     so don't claim the hyphenated form is the only correct one.
+  - ⚠️ when pointing to where you buy, prefer **"là-bas"** or **"chez eux"** over a bare **"là"** — a
+    standalone "là" is clunky ("je le prends en scellé chez eux", not "…en scellé là"). [FR feedback
+    2026-06-07.]
 - **Banned promo words (FR / Chloé) — never on a slide or in a caption:** **"code promo", "-10%", "le
   meilleur site", "achetez", "sponso".** They turn a collector post into an ad. (The *principle* — no
   overt promo / ad-speak — is universal; these literal words are FR-only. DE has its own to avoid:
