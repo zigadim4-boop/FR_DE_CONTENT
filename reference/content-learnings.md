@@ -16,6 +16,14 @@ NOT applied by rewriting already-delivered content — only by improving future 
 - **Rules are UNIVERSAL by default — they apply to ALL THREE personas, no matter which persona's
   feedback created the rule.** Craft principles (hook style, slide order, IvoryShard integration,
   honesty, engagement closes, topic relatability, pacing, depth) are language-agnostic.
+- **PRECEDENCE — the curated winning examples OUTRANK written feedback when they conflict. [User
+  decision 2026-06-08.]** The slideshows in `reference/examples/` are real top-performers; the written
+  rules in this file are guidance distilled from feedback. When a rule says one thing and what the
+  winners actually DO says another, **follow the winners.** Don't delete the conflicting feedback (it
+  still captures the user's intent and applies wherever the winners are silent) — but where they clash,
+  the proven example wins. Concretely: this already overrides the old emoji ban (winners use emojis),
+  the forced engagement/save-share close (winners close emotionally or just end), and the hard 5–6
+  slide cap (showcase/advice winners run longer — see those rules below for the reconciled versions).
 - **✅/❌ examples are language-tagged TEMPLATES, not the rule itself.** An example shown only in DE or
   FR just illustrates the principle. **Never copy an example's wording — not across languages, AND not
   verbatim into a real script even within the same language.** The examples teach the PRINCIPLE; every
@@ -67,8 +75,10 @@ NOT applied by rewriting already-delivered content — only by improving future 
   Default to angles every collector feels. (Niche is the exception, not the default.)
 - **Relatable angle bank (these are CONCEPTS — localize the wording per persona):** pull reveals,
   favorite cards (+ why), **others-vs-me** comparisons, collector struggles / relatable POV,
-  **"wish I knew" beginner lists**, top-5 picks. The *concept* is universal (Lea, Mila, Chloé); write
-  the phrasing fresh in each language — never copy the German strings onto a French post.
+  **"wish I knew" beginner lists**, top-5 picks, **anti-FOMO / "collect what YOU love, ignore the money
+  side"** (prices drop, packs are for fun not profit, you never go wrong collecting what you like — a
+  proven whole-base emotional theme from the example audit). The *concept* is universal (Lea, Mila,
+  Chloé); write the phrasing fresh in each language — never copy the German strings onto a French post.
   - ✅ DE (Lea/Mila): "5 Dinge die ich beim Sammeln gern früher gewusst hätte" · "Andere Sammler vs ich 😅"
   - ✅ FR (Chloé): "5 trucs que j'aurais aimé savoir plus tôt" · "Les autres vs moi 😅"
   - ❌ topic (any persona): long-term sealed storage / deep ROI = investor-niche (DE ex.: "So lagerst du sealed Displays richtig")
@@ -86,6 +96,58 @@ NOT applied by rewriting already-delivered content — only by improving future 
   be **NET-NEW**, never a rebuild of the ⛔ burned "5 things I learned in 10 years" listicle
   (`content-formats.md`). Different framing: personal *regret / empathy* on fresh tips, not
   veteran-flex with IvoryShard as tip #3. (The daily rule still holds: Lea ≠ Mila format same day.)
+
+## What the full example-library audit confirmed & changed [self-review 2026-06-08]
+I read **all 14 reference slideshows end to end** (FR ss1–4, general ss1, DE ss1–9) — every slide and
+image, reconstructing true narrative order. Lessons below are feedback to myself; everything here is
+**additive — it refines, never deletes, the rules above.**
+- **Pure-value, NO-shop decks are the NORM, not the exception — 8 of 14 winners mention no shop at all.**
+  IvoryShard appears only when the format gives it a genuine home (the "have a shop you trust" lesson, a
+  newsletter/restock-email screenshot, or the shop-rating countdown). Takeaway: **never force IvoryShard
+  into a deck** — default to value-only and plug only when a natural vehicle exists. Confirms the
+  value-first / anti-repetition rules; the audit just shows how dominant value-only really is.
+- **The fresh winners are "N things I wish I knew" beginner-advice decks — done as personal
+  regret/empathy, never veteran-flex, and with NO IvoryShard.** (DE ss7 "5 Dinge…", DE ss8 "3 Dinge… 💜",
+  DE ss9 "3 Dinge… (Part. 4326)", general ss1 "My advice for new collectors".) This IS the NET-NEW way
+  the rule above demands — the burned "10 years / IvoryShard tip #3" listicle is the wrong cut; these are
+  the right cut. The two newest (2026-06-08) are **"3 Dinge" → 4 slides total (hook + 3)**, confirming
+  BOTH the number-hook rule and the 5–6 cap (tighter than the cap is welcome).
+- **Anti-FOMO / "collect what YOU love, ignore the money side" is a proven whole-base emotional theme.**
+  Recurs in general ss1 and DE ss8: prices drop, don't buy because a video screams "BUY NOW", packs are
+  for the fun of opening (not profit), you "never do anything wrong" collecting what you like. Add it to
+  the relatable angle bank. Reinforces that investor/ROI framing is the niche and joy/relatability is the
+  mass angle.
+- **An authentic EMOTIONAL / real-talk close is a proven winner — refines the "end on a question or hot
+  take" close rule below.** The reference winners almost never use comment-bait or a spicy take; they
+  close on warmth or mild vulnerability: "Sei nicht zu hart zu dir", "slow down, genieß es, brenn nicht
+  aus", a personal lost-cards anecdote ("einfach traurig – nimm nen Zip"), "collect what you like & you
+  never go wrong". So a genuine emotional/relatable line is a legitimate alternative to a manufactured
+  "?". Keep the save/share-trigger guidance and the "no second shop plug / no flat fact-dump" ban — just
+  don't bolt a fake question onto a deck where a human closing line lands harder.
+- **Personal-advice decks are conversational, not rigid title+bullets.** The newest winners use one
+  spoken lead line + 1–2 short support sentences per slide, not a bold TITLE + 3 dash-bullets. The
+  "title + 2–4 bullets / sparse one-liners look unfinished" rule (`content-formats.md`) still holds for
+  ranked/structured decks, but for personal "wish I knew" advice a conversational lead + light support
+  reads MORE native than a bullet template. **Match text density to format.**
+- **"Part X" serialization is a proven relatability device** — "Partie 1/2", "Part 1/2", even a joke
+  "(Part. 4326)". Framing a deck as one entry in an ongoing personal series signals authenticity.
+- **Card-showcase "favorites" reveals work with superlative groupings.** DE ss6 split 8 cards into pairs
+  — "die coolsten / süßesten / chilligsten / gefährlichsten zwei" — one card per slide, near-zero copy,
+  the card ART is the content. Clean structure for a favorites/leak-reaction deck. BUT it shows the
+  hook↔payoff trap even in a "winner": it promised "leaked 30-Jahre-Set" cards then included a Charizard
+  and a Pikachu&Zekrom that aren't from that set. **Keep every showcase card actually on-topic.**
+- **IvoryShard's real, honest value props (lean on these for natural mentions):** restock/drop
+  notifications · **checkout limits + weekly drops → "so bekommt jeder sein Stück / so everyone gets a
+  piece"** · personal support / community feel · singles AND sealed · free EU shipping. Real store
+  taglines seen on screen: **"CHASE THE SHARD"** (older: "CHASE THE DREAM"). These are the threads the
+  winning organic mentions actually pull on — never price/"fair price"/scarcity (already banned below).
+- **CONFIRMED BURNED (do not rebuild):** the "5 things in 10 years" listicle and the "I rate the shops
+  X/10" countdown are cross-posted in both markets (FR↔DE) and stay study-only.
+- **Emojis — RESOLVED [user decision 2026-06-08]: allowed, used the way the winners use them.** The two
+  newest winners (DE ss8 `💜✨🃏🙏`, DE ss9 `💚⚠️🧡🥲`) use one tasteful emoji accent per line; the user
+  confirmed "if winners use emojis you can use them in the same way." The old hard emoji ban is lifted —
+  see the symbol-ban rule below for the exact carve-out (one tasteful accent per line; structural symbols
+  — em dash, `=`, `+`, `:`, →, <> — stay banned).
 
 ## Hooks (slide 1) — curiosity, never "explainer intro"
 - **Slide 1 must create curiosity or stakes, not announce a lesson.** "Explainer-intro" phrasing —
@@ -243,10 +305,18 @@ NOT applied by rewriting already-delivered content — only by improving future 
   not just drop a shop name.
   - ✅ Heading "Wo du das Set am besten bekommst" → bullets about *where/how to buy fairly*.
   - ❌ Heading "Wo du am besten einsteigst" (promises entry advice) → delivers only a shop name.
-- **Do NOT close the carousel with a shop plug, and never end the close on a flat list of facts.**
-  A second store mention or a fact-dump final slide reads as salesy / dead-ends engagement. End on an
-  **engagement hook that drives comments** (algorithm boost) — either a question or, even stronger, a
-  **spicy hot take / opinion** (spicy opinions drive ~3–4× more comments than a neutral close).
+- **Close however the winning examples close — an emotional/real-talk line is the proven default; an
+  engagement question or hot take is optional, not mandatory. [Winners outrank the older 2026-06-07
+  engagement-close feedback; see Precedence in Scope.]** Across the reference winners the dominant close
+  is warmth or mild vulnerability ("Sei nicht zu hart zu dir", "slow down, brenn nicht aus", a personal
+  lost-cards anecdote), the last list point simply landing, or a soft "follow for daily content" — NOT
+  comment-bait. So: do NOT bolt a forced question, spicy take, or save/share trigger onto a deck where a
+  human closing line lands harder. Use an engagement question/hot take only when it's genuinely natural.
+  The two hard bans still hold (they don't conflict with any winner): **never close on a shop plug, and
+  never end on a flat list of facts.**
+  - The older guidance below is kept for when an engagement close IS the natural choice — treat it as a
+    tool, not a requirement: an **engagement hook** can drive comments — a question or a
+    **spicy hot take / opinion** (spicy opinions drive ~3–4× more comments than a neutral close).
   **This includes SUMMARY / recap slides:** a recap that just re-lists the picks and stops closes the
   narrative without inviting comments — always tack an open-ended question (or hot take) onto it.
   Open-ended questions on the close slide drive ~3–4× more comments than a neutral list.
@@ -284,15 +354,21 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ FR (Chloé): same shape — thèse du set, puis les produits concrets (localize fresh in French).
 
 ## Slide order & flow
-- **Hard cap on deck length: 5–6 slides TOTAL, counting the final CTA slide — 7+ is too many. Aim for
-  5, allow 6, never exceed 6. [User feedback 2026-06-06.]** In the JSON that means `slides[]` has
-  **4–5 entries** and the `cta` renders as the last slide (4 slides + CTA = 5 total; 5 slides + CTA = 6
-  total). A tight deck holds swipe-through; padding to 7–8 loses people, so trim to the strongest beats.
-  **This OVERRIDES the old "≥5 content slides / no upper limit" rule in `daily_content.md` and the
-  `lint-content` check** — the new range is 4–5 `slides[]` entries (5–6 total incl. the CTA). Universal
-  — all three personas.
-  - ✅ 5 total: hook + 3 body slides + CTA. ✅ 6 total: hook + 4 body slides + CTA.
-  - ❌ 7+ total (e.g. hook + 5 body + CTA) — too long; cut or merge slides down to 4–5 `slides[]`.
+- **Deck length: default 5–6 total, but match the winning length FOR THE FORMAT — the winners outrank
+  the flat cap. [Reconciled 2026-06-08; supersedes the flat 5–6 hard cap from 2026-06-06 per Precedence
+  in Scope.]** The 2026-06-06 feedback set a hard 5–6 total ceiling; the example winners show length is
+  format-dependent, so follow the format's proven length:
+  - **Advice / "N things" / value / comparison decks → stay tight: 5–6 total (aim 5).** This is what the
+    NEWEST winners do (DE ss8/ss9, 2026-06-08, are 4 total: hook + 3) — tighter than the cap is great.
+    In the JSON: **3–5 `slides[]` entries** + the `cta` as the last slide. Padding a value deck loses people.
+  - **Card-showcase / favorites-reveal / leak-reaction decks → may run longer (up to ~8–9 total).** One
+    card per slide IS the format (FR ss4 = 7, DE ss6 = 9); trimming would gut it. Each extra slide must
+    earn its place with a distinct card/beat — never pad with filler.
+  - **This overrides the old "≥5 content slides / no upper limit" rule in `daily_content.md` and the
+    flat `lint-content` cap** — the lint ceiling should allow the longer showcase format, not block it.
+  - ✅ advice: 4–6 total (hook + 3–4 body + CTA). ✅ showcase: hook + 6–8 card slides.
+  - ❌ a value/advice deck padded to 8 total — trim to the strongest beats.
+  - ❌ gutting a favorites showcase down to 5 just to hit the old cap — keep the cards.
 - **The hook makes a PROMISE; every slide after it delivers a concrete piece of THAT promise, in order
   — never pivot to a different thread.** If the hook promises a plan ("where I'd put €50 in scellé"),
   the body IS that plan: each slide is one concrete step. The classic break: the hook promises a plan
@@ -465,19 +541,25 @@ NOT applied by rewriting already-delivered content — only by improving future 
   "außerdem" (DE) / "et", "ainsi que", "en plus" (FR). Each bullet = one idea, telegram-style.
   - ✅ DE bullets: "16.09.2026 — weltweit gleichzeitig" · "Erstes Set dieser Art" · "Riesiger Hype-Runway"
   - ❌ DE bullet: "Das Set erscheint im Oktober und passend zum Jubiläum gibt es dazu noch …"
-- **Carousel slides are CLEAN SHORT SENTENCES — no symbols, no emojis (hard ban). [Newest feedback,
-  2026-06-05 — applies to BOTH/ALL personas.]** On every slide (title AND bullets) ban: **em/en dashes
-  (— –), `=`, `+`, `:`, arrows (→), angle brackets (<>)**, and **ALL emojis** (👀 😅 📌 👇 🥇 …). Write
-  each line as a plain short sentence or phrase, one idea per line — never a "Label : value" spec-sheet
-  structure, never decorative symbols joining ideas. **This OVERRIDES the older carve-outs in this file:
-  the "a normal em dash in running text is fine" and "price tag like `La SIR : ~50-150€`" exceptions are
-  REVOKED, and the emojis/symbols shown in older ✅ examples throughout this file (hooks, closes, recaps)
-  are SUPERSEDED — copy those examples' wording and angle, NEVER their emojis or symbols.** Prices stay
-  welcome (see Prices section) — just phrase them as words, not with `:`/`=`/`~`.
-  - ✅ FR (Chloé): "Repère les vendeurs sérieux" · "La SIR tourne autour de 50 à 150€"
-  - ❌ FR: "Système d'évaluation : repérer les vendeurs sérieux" · "La SIR : ~50-150€ 👀"
-  - ✅ DE (Lea/Mila): "Achte auf seriöse Verkäufer" · "295 Karten, das größte Set aller Zeiten" · "Hot Take, Dunkelnacht wird überschätzt. Wer ist dabei?"
-  - ❌ DE: "Bewertung → seriöse Verkäufer 👀" · "295 Karten = größtes Set ever" · "10 Booster + Foil Promo + Poster"
+- **Carousel slides are CLEAN SHORT SENTENCES — no structural symbols. Emojis ARE allowed, used the way
+  the winning examples use them. [Symbol ban: 2026-06-05. Emoji carve-out: user decision 2026-06-08.]**
+  On every slide (title AND bullets) ban these **structural symbols**: **em/en dashes (— –), `=`, `+`,
+  `:`, arrows (→), angle brackets (<>)**. Write each line as a plain short sentence or phrase, one idea
+  per line — never a "Label : value" spec-sheet structure, never decorative symbols joining ideas. **This
+  OVERRIDES the older carve-outs in this file: the "a normal em dash in running text is fine" and "price
+  tag like `La SIR : ~50-150€`" exceptions are REVOKED.** Prices stay welcome (see Prices section) — just
+  phrase them as words, not with `:`/`=`/`~`.
+  - **Emojis [user decision 2026-06-08]:** allowed, but only **the way the reference winners use them — at
+    most ONE tasteful emoji accent per line**, sentence-final or as a single section accent (e.g. a hook
+    ending in 👀 / 😅 / 💜 / 🥲, a warning line with ⚠️). Never use an emoji to JOIN or replace words, never
+    stack multiple emojis on a line, never let an emoji do a symbol's structural job (no "→" via ➡️). When
+    in doubt, fewer. The older ✅ examples' emoji usage is fine to follow in spirit; their structural
+    symbols are not.
+  - ✅ FR (Chloé): "Repère les vendeurs sérieux" · "La SIR tourne autour de 50 à 150€" · "Ce scellé peut être fake 👀"
+  - ❌ FR (structural symbols): "Système d'évaluation : repérer les vendeurs sérieux" · "La SIR : ~50-150€"
+  - ✅ DE (Lea/Mila): "Achte auf seriöse Verkäufer" · "295 Karten, das größte Set aller Zeiten" · "Sei nicht zu hart zu dir 🥲"
+  - ❌ DE (structural symbols): "Bewertung → seriöse Verkäufer" · "295 Karten = größtes Set ever" · "10 Booster + Foil Promo + Poster"
+  - ❌ emoji misuse: "Druck 👀 Preis 👀 Lichttest 👀" (stacked/repeated) · "seriöse Verkäufer ➡️ kaufen" (emoji as arrow)
 
 ## Proofread the native text
 - **Typos on a slide kill credibility instantly — proofread every native (FR/DE) word before it

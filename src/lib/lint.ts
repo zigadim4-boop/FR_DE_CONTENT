@@ -5,11 +5,13 @@
  * natural). Returns errors (must fix) and warns (review).
  *
  * Rules (see workflows/daily_content.md, reference/*.md):
- *   ERRORS: missing fields; not 4-5 content slides (5-6 total incl. the CTA); a content slide (n>=2) without title or without 2-4
- *           bullets; English parallel missing/mismatched; a NUMERIC pull-rate/odds on a slide; a
- *           "verify...before filming" offload note in a direction; IvoryShard placed too early
- *           (5 slides -> slide 3; >5 -> slide 4+); two scripts reusing the same format.
- *   WARNS:  a restock-ALERT CTA pushed for a product in stock for that market; a bare % on a slide.
+ *   ERRORS: missing fields; <3 or >8 content slides (deck length is format-dependent: tight for advice/
+ *           value decks, longer for card-showcase/favorites decks — winners outrank the old flat cap); a
+ *           content slide (n>=2) without a title or with >4 bullets; English parallel missing/mismatched;
+ *           a NUMERIC pull-rate/odds on a slide; a "verify...before filming" offload note in a direction;
+ *           IvoryShard placed too early (5 slides -> slide 3; >5 -> slide 4+); two scripts reusing the same format.
+ *   WARNS:  a deck >6 total (fine for a showcase, trim if it's an advice/value deck); a restock-ALERT CTA
+ *           pushed for a product in stock for that market; a bare % on a slide.
  */
 import type { DailyContent, Script, StoreState } from "./schema.js";
 
@@ -40,13 +42,20 @@ function checkScript(s: Script, store: StoreState, errors: string[], warns: stri
     }
   }
   const slides = s.slides ?? [];
-  // Deck length (user feedback 2026-06-06): 5-6 slides TOTAL counting the CTA -> slides[] must be 4-5
-  // (the cta renders as the final slide). 7+ total is too long. OVERRIDES the old ">= 5 content slides".
-  if (slides.length < 4) {
-    errors.push(`[${who}] only ${slides.length} content slides (need >= 4, i.e. >= 5 total with the CTA)`);
-  } else if (slides.length > 5) {
+  // Deck length (reconciled 2026-06-08 — the example winners outrank the flat 2026-06-06 cap): length is
+  // FORMAT-dependent. Advice / "N things" / value / comparison decks stay tight (<=6 total); card-showcase /
+  // favorites-reveal / leak-reaction decks may run longer because one card per slide IS the format
+  // (FR ss4 = 7, DE ss6 = 9). Hard floor 4 total (slides[] >= 3), hard ceiling 9 total (slides[] <= 8);
+  // 7+ total only WARNS (it should be a showcase format, not a padded list).
+  if (slides.length < 3) {
+    errors.push(`[${who}] only ${slides.length} content slides (need >= 3, i.e. >= 4 total with the CTA)`);
+  } else if (slides.length > 8) {
     errors.push(
-      `[${who}] ${slides.length} content slides + CTA = ${slides.length + 1} total (max 6 counting the CTA; trim slides[] to 4-5)`,
+      `[${who}] ${slides.length} content slides + CTA = ${slides.length + 1} total (max 9; even a card showcase shouldn't exceed this)`,
+    );
+  } else if (slides.length > 5) {
+    warns.push(
+      `[${who}] ${slides.length} content slides + CTA = ${slides.length + 1} total (>6) - fine for a card-showcase/favorites deck, but trim if this is an advice/value/list deck`,
     );
   }
 
