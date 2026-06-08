@@ -136,6 +136,17 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ FR (Chloé): "La version JP a même pas toutes les cartes de la FR 👀" (stake + surprise, set name deferred)
   - ✅ DE (Lea/Mila): "Die JP-Version hat nicht mal alle Karten der DE 👀"
   - ❌ FR: "Version FR ou JP de [set], tu prends quoi ? Je te fais le comparatif vite fait" (names topic, neutral, undersells)
+- **When a deck is a clean list of exactly N distinct points/steps, lead with the NUMBER and number
+  the slides. [Feedback 2026-06-08; universal.]** A concrete count ("3 trucs…", "3 Dinge…") beats a
+  vague line: it sets a clear expectation and makes people swipe to the end to collect all N. So when
+  the body genuinely IS a tidy list of three (or any exact count), put the number in the hook AND label
+  the slides 1/2/3. **Guardrail — only when the count is truly that exact and every slide delivers ONE
+  point.** Don't pad to reach a round number, and don't force a number onto a deck that isn't a clean
+  list — if it's not a tidy count, use a plain curiosity / warning hook instead.
+  - ✅ FR (Chloé): "3 trucs qu'on a jamais vus en 30 ans de Pokémon" → slides 1/2/3, one "first" each
+  - ✅ DE (Lea/Mila): "3 Dinge, die eine Fake-Karte sofort verraten" → slides 1/2/3 (Druck, Preis, Lichttest)
+  - ❌ a soft "On a jamais vu ça…" when the deck is in fact exactly three firsts (undersells the count)
+  - ❌ forcing "5 Dinge" when you only have 3 real points (padding) — use the honest number, or no number
 - **Slide 2 must stand on its own as a second cover.** Instagram re-serves slide 2 as the cover to
   people who didn't engage with slide 1, so it can't assume slide 1 was seen — give it its own
   curiosity / stakes, not a mid-thought continuation. (Platform-algorithm fact → universal.)
@@ -306,6 +317,16 @@ NOT applied by rewriting already-delivered content — only by improving future 
   - ✅ FR (Chloé): hook "l'un des deux, tu vas le regretter" → verdict names it ("le garder scellé là, c'est ça que tu regretteras — voilà pourquoi")
   - ❌ FR: hook "tu vas regretter" → verdict "les deux se valent, à toi de voir" (neutralizes the stake)
   - ✅ DE (Lea/Mila): a "du wirst es bereuen" hook must end on the named regret, not on "beides ok".
+- **The CTA / close must stay CONSISTENT with what the BODY taught — never introduce a competing claim
+  on the last slide. [DE feedback 2026-06-08; universal.]** If the body teaches "the CARD gives a fake
+  away" (print, blue tone, light test), a close that says "actually it's the PRICE that gives it away"
+  contradicts the whole deck and undercuts what you just taught. Fix it by reframing the close as a
+  RANKING WITHIN the body's own points — rank which of the things you just taught matters most — not as
+  a new thesis. (Cousin of the hook↔verdict rule above and the deck-level hook↔body rule: same
+  consistency discipline, applied to the closing slide vs the body.)
+  - ✅ DE (Lea/Mila): body = Druck, Preis, Lichttest → close "von den dreien verrät der Preis am meisten" (ranks within the three)
+  - ❌ DE: body all about reading the card → CTA "Fakes verraten sich am Preis, nicht an der Karte" (new claim, contradicts the body)
+  - ✅ FR (Chloé): close ranks the checks you just taught — never adds a different tell.
 - **An open-vs-keep recommendation must be a clean BINARY that matches the quantity on screen. [FR
   feedback 2026-06-07; universal.]** Against a single item, "open one and keep the rest" is ambiguous —
   it implies several when there's only one. Make it a true either/or: open it and enjoy, OR keep it
@@ -393,6 +414,13 @@ NOT applied by rewriting already-delivered content — only by improving future 
       **16 September 2026** (NOT October).
     - **First-ever simultaneous worldwide** Pokémon TCG release (official: *"the first to have a
       simultaneous global release"*) — a big hype-runway framing is accurate.
+    - **30th Celebration set details (verified 2026-06-08 via pokemon.com / VGC / PokeBeach / Beebom)
+      — all strong "never seen before" slide material:** every booster has **6 cards, not 5**; **EVERY
+      card in the set is foil, including Basic Energy**; each pack includes a **guaranteed Pikachu —
+      1 of 30 unique holo Pikachu, each by a different illustrator**; debuts a brand-new **"Futuristic
+      Rare"** rarity, with **Mew and Mewtwo** the first two (art by Yoshirotten); includes **30 classic
+      reprints from across TCG history in special foiling**; ~150 cards before secret rares. (Names
+      localize per market — FR Chloé / DE Lea+Mila; figures can shift, re-verify at run time.)
     - The **"Pitch Black"** set releases **17 July 2026** — a *different* set from 30th Celebration;
       don't conflate the two dates.
     - **Set ME04 = the Western localization of Japan's "Ninja Spinner" (M4)** (verified 2026-06-04 via
