@@ -26,11 +26,11 @@ export const getState = schemaTask({
 
     const recent = await sbSelect<FormatRow>(
       "format_log",
-      `select=date,persona,market,format&date=gte.${since}&order=date.desc`,
+      `select=date,persona,market,format&date=gte.${encodeURIComponent(since)}&order=date.desc`,
     );
     const mk = await sbSelect<{ data: unknown; updated_at: string }>(
       "market_knowledge",
-      `select=data,updated_at&id=eq.${MARKET_KNOWLEDGE_ROW_ID}`,
+      `select=data,updated_at&id=eq.${encodeURIComponent(MARKET_KNOWLEDGE_ROW_ID)}`,
     );
 
     return {
