@@ -1,9 +1,13 @@
-# Market Intel — LIVING DOC (prices & news only; update daily)
+# Market Intel — prices & news hooks (auto-refreshed each run)
 
 > **Scope:** price trends and news hooks ONLY. Set identity — names, release dates, chase cards, card
 > counts — lives in `reference/verified-facts.md` and is **never duplicated here**.
 >
-> **Maintenance rule:** every daily run (step 2 of `daily_content.md`), refresh the dated sections below from the news/price sources and **mirror the key facts to agent memory** (`pokemon-market-intel`). Always update `Last updated`. **If `Last updated` is more than 3 days old, this file is a BLOCKER — refresh it before briefing any writer.** Prices are indicative secondary-market (USD unless noted); for FR/DE buyers, **Cardmarket EUR** is the better reference — re-check before quoting in a script.
+> **Upkeep:** NO daily human chore. The agent's authoritative running memory is the `market_knowledge`
+> row in Supabase, which auto-updates every run. This file is a human-readable mirror: the autonomous
+> daily run regenerates the dated sections below from that morning's research and commits it (best
+> effort), and a human may edit it anytime. Prices are indicative secondary-market (USD unless noted);
+> for FR/DE buyers, **Cardmarket EUR** is the better reference — re-check before quoting in a script.
 
 **Last updated:** 2026-06-10
 

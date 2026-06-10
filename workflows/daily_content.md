@@ -30,7 +30,8 @@ anything that depends on the *other* personas or on *other days* is YOUR job, pa
 - `reference/content-formats.md` — the format library (+ the burned formats to avoid). **You** pick
   formats here.
 - `reference/market-stock-logic.md` — the CTA-intensity decision matrix. **You** set intensity.
-- `reference/market-intel.md` — living releases + value/price hooks (read, never overwrite).
+- `reference/market-intel.md` — price/value hooks; auto-refreshed at the end of each run, and a human
+  can edit it anytime.
 - `reference/winning-style.md` — the example library distilled to text (the style bar). Writers read
   this, NOT the raw screenshots. `reference/examples/` is now a manual archive — updated only when the
   user shares a new winner in chat; it is **not loaded on a run**.
@@ -69,10 +70,11 @@ Trigger **`scrape-store`** → `store_state` (in_stock, coming_soon, banner, res
   cards, counts) — these are language-neutral; you confirm them once and pass each market's slice into
   the briefs so writers don't re-research them.
 - **Read `reference/market-intel.md`** (price trends + news hooks; set facts live in
-  `verified-facts.md`). **Check its `Last updated` stamp: if older than 3 days, treat it as a BLOCKER —
-  refresh its price/news sections (and the stamp) from the listed sources before briefing any writer;
-  never brief from stale intel.** **Persist** what you learned into `market_knowledge` (passed to
-  `daily-content` at the end).
+  `verified-facts.md`) as a starting baseline — but **don't trust its stamp; always do your own fresh
+  news/price sweep above.** Your authoritative running memory is `market_knowledge` (auto-persisted
+  each run), not this file. **Persist** what you learned into `market_knowledge` (passed to
+  `daily-content` at the end). The file itself is auto-refreshed from your research at the end of the
+  run (see the autonomous-run prompt) — no human upkeep required.
 
 ### 3. Decide CTA intensity per market
 Apply `market-stock-logic.md` to today's stock → set **intensity** (soft / medium / strong — strong
