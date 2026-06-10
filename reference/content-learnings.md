@@ -45,6 +45,24 @@ NOT applied by rewriting already-delivered content — only by improving future 
   vocabulary rule universal.
 
 ## Topic & angle selection — relatable to every collector
+- **Prioritize HOT, TIMELY topics FAR more often — default to them over evergreen filler. [Feedback
+  2026-06-09; universal — all three personas.]** Timely, high-hype topics pull the most reach and
+  shares; when a real beat is live, ride it from a fresh angle instead of reaching for evergreen
+  filler. **Two upcoming runways to milk now, in order of heat:**
+  - **ME05 — Pitch Black (EN) / Nuit Noire (FR, Chloé) / Dunkelnacht (DE, Lea/Mila) — the NEARER,
+    hotter one.** Releases **17 July 2026**, prerelease from **4 July**. Dark-theme Mega set;
+    headliners **Mega Darkrai ex + Mega Zeraora ex**. Angles: the new Megas, Dark-theme chase cards,
+    prerelease/pre-order timing, JP-vs-localized, scarcity, value predictions. **Put HER market's set
+    name on the slide — Nuit Noire for Chloé, Dunkelnacht for Lea/Mila — NEVER the English "Pitch
+    Black."**
+  - **30th anniversary — "30th Celebration" — the biggest story in the hobby.** Releases **16
+    September 2026**: worldwide same-day, every card foil, the new Futuristic Rare, 30 unique Pikachu.
+  - Verified set facts (names, dates, chase cards) live in the "Dates, names & set facts" block — re-verify per language at run time.
+  - **Rotate the SUB-ANGLE so the topic doesn't fatigue over the weeks before release** (news,
+    scarcity, chase cards, JP vs EN, pre-order timing, value predictions). **Don't run the exact same
+    angle two days running, and DON'T post when there's no real beat** — a forced post on a dead day is
+    worse than waiting for the next genuine beat. (Pairs with the per-market anti-repetition rules in
+    IvoryShard placement, and "every deck must be a SPECIFIC topic" below.)
 - **Every deck must be a SPECIFIC, genuinely interesting topic — never random filler, never a template
   mechanically filled in.** If the topic and the slide text feel random, irrelevant, or generic,
   viewers scroll past. Start from a real reason-to-care (a current drop / news, a live debate, a
@@ -77,7 +95,9 @@ NOT applied by rewriting already-delivered content — only by improving future 
   favorite cards (+ why), **others-vs-me** comparisons, collector struggles / relatable POV,
   **"wish I knew" beginner lists**, top-5 picks, **anti-FOMO / "collect what YOU love, ignore the money
   side"** (prices drop, packs are for fun not profit, you never go wrong collecting what you like — a
-  proven whole-base emotional theme from the example audit). The *concept* is universal (Lea, Mila,
+  proven whole-base emotional theme from the example audit, BUT execute it with CONCRETE beats, never
+  the feel-good platitudes themselves on a slide — see the platitude ban under "Make every slide
+  save-worthy"). The *concept* is universal (Lea, Mila,
   Chloé); write the phrasing fresh in each language — never copy the German strings onto a French post.
   - ✅ DE (Lea/Mila): "5 Dinge die ich beim Sammeln gern früher gewusst hätte" · "Andere Sammler vs ich 😅"
   - ✅ FR (Chloé): "5 trucs que j'aurais aimé savoir plus tôt" · "Les autres vs moi 😅"
@@ -209,6 +229,13 @@ image, reconstructing true narrative order. Lessons below are feedback to myself
   - ✅ DE (Lea/Mila): "3 Dinge, die eine Fake-Karte sofort verraten" → slides 1/2/3 (Druck, Preis, Lichttest)
   - ❌ a soft "On a jamais vu ça…" when the deck is in fact exactly three firsts (undersells the count)
   - ❌ forcing "5 Dinge" when you only have 3 real points (padding) — use the honest number, or no number
+  - **THREE is the sweet spot; a number hook is OPTIONAL above three. [FR feedback 2026-06-09;
+    universal.]** A clean count of three is the most compelling to number ("3 trucs…", "3 Dinge…").
+    At FOUR or more distinct points the number is no longer a must — a plain curiosity line often
+    out-hooks "4 trucs…"; use the number only if the count itself is the draw. (The count must still be
+    honest — never pad, never undersell a real three.)
+    - ✅ FR (Chloé): a 4-step care deck ("Protège tes pulls") opens on a plain curiosity line, NOT "4 trucs…" — four isn't as clean as three.
+    - ✅ DE (Lea/Mila): a clean THREE gets the number; for four steps a curiosity hook is fine.
 - **Slide 2 must stand on its own as a second cover.** Instagram re-serves slide 2 as the cover to
   people who didn't engage with slide 1, so it can't assume slide 1 was seen — give it its own
   curiosity / stakes, not a mid-thought continuation. (Platform-algorithm fact → universal.)
@@ -233,7 +260,7 @@ image, reconstructing true narrative order. Lessons below are feedback to myself
   (English)" is a fine bridge.
   - ✅ DE (Lea/Mila): "Mega-Entwicklung – Dunkelnacht" (or "Dunkelnacht", or "Dunkelnacht (Pitch Black)")
   - ❌ DE: "Pitch Black" alone on a German post
-  - ⚠️ FR (Chloé): "Dunkelnacht" is the GERMAN name — do NOT use it on a French post; look up the official FR name for Pitch Black at run time.
+  - ✅ FR (Chloé): "Méga-Évolution – Nuit Noire" (or "Nuit Noire", or "Nuit Noire (Pitch Black)"). ⚠️ "Dunkelnacht" is the GERMAN name — NEVER on a French post (and never put the FR name on a DE post).
   - Note (DE orthography, Lea/Mila only): the series prefix uses an **en dash** — "Mega-Entwicklung – Dunkelnacht", not a hyphen.
 
 ## IvoryShard placement & the closing slide
@@ -430,6 +457,18 @@ image, reconstructing true narrative order. Lessons below are feedback to myself
   - ✅ DE (Lea/Mila): slide 3 = warum der Release-Preis fake ist (Hype, Scalper) · slide 4 = Chase-Ranking · slide 6 = der konkrete Move, mit "1-2 Wochen warten" NUR hier
   - ❌ DE: Slides 3, 4 und 6 sagen alle dasselbe ("kauf das Single nicht am Day 1, warte auf den Marktwert")
   - ✅ FR (Chloé): chaque slide un rôle unique, et le "attends 1-2 semaines" une seule fois, sur la slide action
+  - **Catches a restated THEME/FEELING too — not just a tactical takeaway — and the real fix is
+    UPSTREAM, at planning. [DE feedback 2026-06-09; universal. Logged BECAUSE a deck violated the older
+    no-repeat rule anyway: its examples were all tactical, so an emotional thesis restated 3× wasn't
+    recognized as the same mistake.]** A single broad theme ("collect for love, not FOMO", "buy what
+    you like") is the HIGHEST-risk for collapsing into three slides of one idea, because the theme
+    itself is one feeling. **Before writing, LIST the N distinct beats the deck will hit; if you can't
+    name N genuinely different beats, it's one slide, not a deck** — pick a tighter angle, or decompose
+    the theme into distinct concrete sub-points. Each beat must also be concrete, not a cliché (see the
+    platitude ban under "Make every slide save-worthy").
+    - ❌ DE (Lea/Mila): "Sammeln aus Liebe statt FOMO" with slides 3/4/5 all restating "sammel aus Liebe, nicht fürs Geld" (one feeling, three slides)
+    - ✅ DE (Lea/Mila): the same theme as three DISTINCT mistakes — Hype-Kauf · nur zum Flippen · Hype über Geschmack — closing on the 10-Jahre-Sammler-Reframe
+    - ✅ FR (Chloé): decompose the feeling into distinct concrete beats before writing (localize fresh, never translate the DE).
 - **The action / penultimate slide gives a concrete action, not passive advice.** After teaching
   techniques, "au pire tu attends" / "just wait" is anticlimactic. End the value on a do-this
   takeaway; keep "the set is available everywhere" as light reassurance, not the headline.
@@ -456,6 +495,16 @@ image, reconstructing true narrative order. Lessons below are feedback to myself
   - ❌ FR (Chloé): "Ouvrir c'est un pari" · "Sortir la chase d'un bundle c'est rare" · "Le garder scellé garde tes options ouvertes"
   - ✅ FR (Chloé): a concrete cote, a leak, a release date, a lore beat, a timing pattern, or a contrarian take instead.
   - ✅ DE (Lea/Mila): same — no obvious truisms; lead with a price, leak, lore, pattern or hot take (localize fresh, never translate the FR).
+  - **This ban includes feel-good EMOTIONAL platitudes, not just tactical truisms. [DE feedback
+    2026-06-09; universal.]** In an anti-FOMO / relationship deck, lines like "buy what you love",
+    "open boosters for the fun", "no one can put a number on your joy" are platitudes every collector
+    has already heard — they give no reason to stop or save. The anti-FOMO THEME stays proven (see the
+    angle bank); just execute it with one CONCRETE beat per slide — a **specific consequence**, a
+    **decision rule**, or a **contrarian reframe** — and close on a real reframe (e.g. the
+    10-year-collector POV), not a warm cliché.
+    - ❌ DE (Lea/Mila): "Kauf was du liebst" · "Booster sind zum Spaß da" · "Deine Freude kann keiner berechnen" (three slides = one idea)
+    - ✅ DE (Lea/Mila): consequence "Kaufst du auf Hype, zahlst du den Hype-Preis, der in Wochen fällt" · rule "Der Test, willst du sie noch bei 0 €?" · reframe "Nur zum Flippen? Du verlierst gegen einen schnelleren Markt"
+    - ✅ FR (Chloé): same shape — "achète ce que tu aimes" becomes "achète sur le hype, tu paies le prix du hype, ça redescend en quelques semaines" · "le test, tu la voudrais encore à 0 € ?" (localize fresh, never translate the DE).
 - Give the **"why"** behind advice — the mechanism, not the obvious rule.
   - ✅ "Loin du soleil : les UV ternissent" / "Au sec : l'humidité gondole & moisit"
   - ❌ "Loin du soleil et de l'humidité"
@@ -497,8 +546,12 @@ image, reconstructing true narrative order. Lessons below are feedback to myself
       Rare"** rarity, with **Mew and Mewtwo** the first two (art by Yoshirotten); includes **30 classic
       reprints from across TCG history in special foiling**; ~150 cards before secret rares. (Names
       localize per market — FR Chloé / DE Lea+Mila; figures can shift, re-verify at run time.)
-    - The **"Pitch Black"** set releases **17 July 2026** — a *different* set from 30th Celebration;
-      don't conflate the two dates.
+    - **Set ME05 = "Pitch Black" (EN), releases 17 July 2026** — Prerelease tournaments from **4 July
+      2026**, TCG Live **16 July** (verified 2026-06-09 via press.pokemon.com / pokemon.com FR+EN). A
+      *different* set from 30th Celebration — don't conflate the two dates. **Dark-theme Mega set,
+      ~115+ cards** (35+ special-illustration cards); **headliners Mega Darkrai ex + Mega Zeraora ex**,
+      and the set also includes **Mega Chandelure ex + Mega Excadrill ex** (so don't claim only two
+      Megas). Tied to the Mega Dimension DLC of Pokémon Legends: Z-A. Market names below — never cross FR↔DE.
     - **Set ME04 = the Western localization of Japan's "Ninja Spinner" (M4)** (verified 2026-06-04 via
       Bulbapedia / PokeBeach / pokemon.com FR). JP "Ninja Spinner" released **13 Mar 2026**; the
       Western set (**122 cards**) released **22 May 2026**. **Card delta (the post's best angle):** most
@@ -509,8 +562,10 @@ image, reconstructing true narrative order. Lessons below are feedback to myself
       a "Méga".
   - *Localized names — use HER market's name only, never cross FR↔DE:*
     - **DE (Lea/Mila):** "Pitch Black" = **"Dunkelnacht"** (full: "Mega-Entwicklung – Dunkelnacht").
-    - **FR (Chloé):** use the official **French** name — verify at run time; do NOT use "Dunkelnacht"
-      or German date phrasing ("Erscheint am…") on a French post.
+    - **FR (Chloé):** "Pitch Black" = **"Nuit Noire"** (full: **"Méga-Évolution – Nuit Noire"** —
+      verified 2026-06-09 via pokemon.com FR / press.pokemon.com FR). Headliner cards **Méga-Darkrai-ex**
+      and **Méga-Zeraora-ex** (hyphenated FR form). Do NOT use "Dunkelnacht" or German date phrasing
+      ("Erscheint am…") on a French post.
     - **Set ME04 — same set, three market names (never cross them):** EN **"Chaos Rising"**, FR
       **"Chaos Ascendant"** (Chloé), DE **"Wachsendes Chaos"** (Lea/Mila — verify at run time). The
       Japanese set is **"Ninja Spinner"** — never the FR/EN/DE name. Card names are localized too
