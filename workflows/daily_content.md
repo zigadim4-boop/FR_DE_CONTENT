@@ -1,164 +1,144 @@
-# Daily Content — Master Workflow
+# Daily Content — Master Workflow (Orchestrator)
 
 ## Objective
-Every day, produce ready-to-shoot Pokémon TCG slideshow scripts (native text + English translation) that drive traffic to ivoryshard.com without looking promotional, for **three personas**: **Lea** (🇩🇪), **Chloé** (🇫🇷), and **Mila** (🇩🇪, a second German profile run by a different operator). Then post **two Slack messages** from one source JSON:
+Every day, produce ready-to-shoot Pokémon TCG slideshow scripts (native text + English translation)
+that drive traffic to ivoryshard.com without looking promotional, for **three personas**: **Lea**
+(🇩🇪), **Chloé** (🇫🇷), and **Mila** (🇩🇪, a second German profile run by a different operator). Then
+post **two Slack messages** from one source JSON:
 - **`SLACK_CHANNEL_OPERATOR`** → PDF with **Lea + Chloé** (the operator's own two profiles).
 - **`SLACK_CHANNEL_MILA`** → **German-only** PDF with **Mila only** (for Valentin).
 
-Mila is a genuine A/B test against Lea: same German market is fine, but she must use a **different format/angle** (ideally a different tone too). All three scripts in a day must use **distinct formats**.
+Mila is a genuine A/B test against Lea: same German market is fine, but she must use a **different
+format/angle** (ideally a different tone too). All three scripts in a day must use **distinct formats**.
 
-## Inputs
-- **`reference/content-learnings.md` — rules distilled from the user's feedback. READ THIS FIRST and
-  apply every rule. It reflects the user's latest explicit preferences and OVERRIDES any conflicting
-  instruction in this file or CLAUDE.md.**
-- `reference/brand-personas.md` — voice for Chloé (FR), Lea (DE) & Mila (DE #2)
-- `reference/slang-fr.md`, `reference/slang-de.md` — native lexicon
-- `reference/content-formats.md` — format library (+ the 3 burned formats to avoid)
-- `reference/market-stock-logic.md` — the CTA decision matrix
-- `reference/market-intel.md` — living releases + value/price data
-- `reference/examples/` — **screenshots of real carousels that performed well** (the user's curated
-  winners, e.g. `french/ss1…`, `germany/ss1…`). STUDY these as images for the **style, tone, structure
-  and what makes a deck engaging** — they are the BAR for "fun / different / unique". **Never copy their
-  content or topics** — be creative and original.
-- Live read of **ivoryshard.com** (stock + restock signals)
-- Fresh **TCG news + prices** (web) — see the daily news sweep in Step 2
-
-## How this runs now (Trigger.dev + scheduled Claude Code)
-You (Claude Code) are the **brain**, running on a daily schedule. You do the free reasoning
-(research, writing, fact-checks) and call the deployed **Trigger.dev tasks** for the deterministic
-work. Trigger the tasks via the Trigger.dev MCP (`mcp__trigger__trigger_task`) or the REST API.
+## How this runs — you are the ORCHESTRATOR (brain)
+You (Claude Code, on a daily schedule) do NOT write the three scripts yourself. You do the **shared
+work** and the **cross-persona / cross-day decisions**, then **fan out one `persona-writer` subagent
+per persona** (via the Agent tool, all three in one message), collect their scripts, and run the
+deterministic delivery task. Each writer stays in one language lane and can't see the others — so
+anything that depends on the *other* personas or on *other days* is YOUR job, passed to them in a brief.
 
 **Do NOT write to memory during a scheduled run** (keeps your manual Claude use unaffected).
 
-## Tasks used (Trigger.dev — replace the old Python tools)
-- `scrape-store` — live ivoryshard.com stock + banner read (headless Chromium). Returns `store_state`.
-- `fetch-prices` — current prices via CardTrader/eBay APIs. **Use this for prices instead of web
-  search** (saves tokens). Input: a list of card/product names.
-- `get-state` — read the last ~10 days of formats (for dedup) + your running `market_knowledge`.
+## Inputs you own and pass down
+- `reference/content-rules-core.md` — universal craft (every writer reads it; you don't need to).
+- `reference/pack-de.md` / `reference/pack-fr.md` (+ `slang-de.md`/`slang-fr.md`) — the writers read
+  their own; you don't.
+- `reference/verified-facts.md` — shared set facts. **You verify these fresh each run** and pass the
+  relevant slice into each brief.
+- `reference/brand-personas.md` — voices (each writer reads its own section).
+- `reference/content-formats.md` — the format library (+ the burned formats to avoid). **You** pick
+  formats here.
+- `reference/market-stock-logic.md` — the CTA-intensity decision matrix. **You** set intensity.
+- `reference/market-intel.md` — living releases + value/price hooks (read, never overwrite).
+- `reference/winning-style.md` — the example library distilled to text (the style bar). Writers read
+  this, NOT the raw screenshots. `reference/examples/` is now a manual archive — updated only when the
+  user shares a new winner in chat; it is **not loaded on a run**.
+- Live read of **ivoryshard.com** + fresh TCG news/prices.
+
+## Deterministic tasks (Trigger.dev — trigger via `mcp__trigger__trigger_task`)
+- `scrape-store` — live ivoryshard.com stock + banner (headless Chromium). Returns `store_state`.
+- `fetch-prices` — current prices via CardTrader/eBay. Use instead of web-searching prices.
+- `get-state` — last ~10 days of formats (for dedup) + your running `market_knowledge`.
 - `daily-content` — the one-shot pipeline: lints the JSON, renders BOTH PDFs, posts them to the two
-  Slack channels, and saves the day's formats (+ your refreshed `market_knowledge`) to Supabase.
-- `lint-content` / `render-pdf` / `deliver-slack` / `save-state` — the same steps individually, for
-  testing or à-la-carte use.
+  Slack channels, saves the day's formats (+ refreshed `market_knowledge`) to Supabase.
+- `lint-content` / `render-pdf` / `deliver-slack` / `save-state` — the same steps individually.
 
 ---
 
 ## Steps
 
 ### 1. Read the store (stock + restock signals)
-Trigger **`scrape-store`** → returns `store_state` (in_stock, coming_soon, banner, restock_signal)
-plus full product detail. This renders the JS storefront in headless Chromium and reads the product
-cards + the announcement bar.
-- **Restock signal FIRST (banner ≫ coming soon):** a real **announcement-bar banner** under the navbar = the only strong signal (→ Strong intensity allowed). **"Coming soon"** products = mild only (nudge that market to Medium at most, never hype, never insider framing). **Ignore the hero carousel.**
-- **Classify in-stock products** by the English title's **parenthetical language suffix**: `(French)`→FR, `(German)`→DE, `(English)`→both, `(Japanese)/(Chinese)/other`→judgment. (`scrape-store` already does this in its `language` field — sanity-check it.)
-- Use the returned `store_state` directly in the day's JSON payload.
+Trigger **`scrape-store`** → `store_state` (in_stock, coming_soon, banner, restock_signal) + product detail.
+- **Restock signal FIRST (banner ≫ coming soon):** a real **announcement-bar banner** = the only strong
+  signal (→ Strong intensity allowed). **"Coming soon"** = mild only (nudge to Medium at most, never
+  hype, never insider framing). **Ignore the hero carousel.**
+- **Classify in-stock products** by the English title's parenthetical language suffix: `(French)`→FR,
+  `(German)`→DE, `(English)`→both, other→judgment. (`scrape-store` sets `language`; sanity-check it.)
 
-### 2. Refresh news + price/value intel
-- **Load your running memory:** trigger **`get-state`** → `market_knowledge` (what you already know:
-  digested news, known prices, what landed). Start from this so you do NOT re-research the same
-  articles. Only look for what's **new** since `market_knowledge_updated_at`.
-- **Prices:** trigger **`fetch-prices`** with the relevant card/product names (CardTrader/eBay) —
-  use this instead of web-searching prices.
-- **News sweep (DO THIS THOROUGHLY — relevance is the #1 quality lever):** `WebSearch`/`WebFetch`
-  hard for **genuinely fresh, TODAY-relevant** Pokémon TCG news. Don't do a token sweep — run multiple
-  targeted searches and actually stay on top of the cycle:
-  - **New SET LEAKS, reveals, and fresh Pokémon/TCG announcements** (the user confirmed these perform
-    especially well) — upcoming sets, leaked card lists/chase cards, official reveals, release-date news.
-  - Drops / restocks, what to **hold** vs **brick**, chase-card narratives — **global + FR + DE**.
-  - Search **date-bounded** ("this week", current month/year) and hit the FR/DE sources too, not just EN.
-  - Goal: every deck is anchored to something **current and relevant**, not evergreen filler. If big
-    news broke today, that's likely the day's topic.
-- **Read `reference/market-intel.md`** (human-curated viral examples — you read it, never overwrite).
-- **Persist what you learned** into `market_knowledge` (passed to `daily-content`/`save-state` at the
-  end) so tomorrow's run starts smarter.
+### 2. Refresh news + price/value intel, and VERIFY the shared facts
+- **Load running memory:** `get-state` → `market_knowledge`. Start from this; only research what's
+  **new** since `market_knowledge_updated_at`.
+- **Prices:** `fetch-prices` with the relevant names (instead of web-searching prices).
+- **News sweep (DO THIS THOROUGHLY — relevance is the #1 quality lever):** run multiple targeted,
+  date-bounded `WebSearch`/`WebFetch` for genuinely fresh, TODAY-relevant news — **new set leaks,
+  reveals, announcements** (these perform especially well), drops/restocks, hold-vs-brick narratives,
+  global + FR + DE sources. Every deck should anchor to something current.
+- **Verify the slide-safe facts in `reference/verified-facts.md`** for today (dates, set names, chase
+  cards, counts) — these are language-neutral; you confirm them once and pass each market's slice into
+  the briefs so writers don't re-research them.
+- **Read `reference/market-intel.md`** (human-curated hooks). **Persist** what you learned into
+  `market_knowledge` (passed to `daily-content` at the end).
 
-### 3. Decide angle per market
-Apply `market-stock-logic.md` to today's stock state → set **CTA intensity** (soft / medium / hard / hype) for **Chloé** and **Lea** independently.
+### 3. Decide CTA intensity per market
+Apply `market-stock-logic.md` to today's stock → set **intensity** (soft / medium / hard / hype) for
+**DE** and **FR** independently.
 
-### 4. Pick formats (no duplication)
-From `content-formats.md`, choose a format for **each of the three personas** (Lea, Chloé, Mila) that matches that market's intensity (see the Step-D mapping). **Rules:**
-- Never use a **burned** format.
-- **All three scripts must use distinct formats/angles** — never the same script twice. This includes **Lea vs Mila** (both German): they share the market but must differ in format (ideally tone too — that's the A/B test). The linter blocks duplicate formats.
-- Avoid repeating a persona's format from the last ~10 days — use the `recent_formats` returned by
-  **`get-state`** (Step 2) to see what each persona has already used.
+### 4. Assign formats (enforce all the cross-persona rules HERE)
+From `content-formats.md`, pick a format/angle for **each of the three personas**. This is where the
+distinctness rules are enforced — the writers can't see each other:
+- **Never a burned format.**
+- **All three scripts use distinct formats/angles** — including **Lea vs Mila** (both German): same
+  market, but different format, ideally different tone (the A/B test). The linter blocks duplicate formats.
+- **Avoid repeating a persona's own format from the last ~10 days** — use `recent_formats` from `get-state`.
 
-### 4.5 Study the winning examples (the style/quality bar)
-**Before writing, actually OPEN the screenshots in `reference/examples/` (read them as images — they
-are PNGs) and study what makes them work:** topic choice, hook, tone, pacing, slide structure/format,
-and why a viewer would stop and save. These are the user's real winners and the bar for "fun /
-different / unique".
-- **Emulate the STYLE and quality, never the content.** Do NOT reuse their topics, hooks, or wording —
-  be creative and original (see the examples-are-templates rule in `content-learnings.md`). Copying a
-  winner's topic is a failure, not a win.
-- Use them to sanity-check today's angle: if your planned topic feels weaker/duller than these, pick a
-  better one (lean on the fresh news from Step 2 and the confirmed interesting angles in
-  `content-learnings.md`).
+### 5. Decide the IvoryShard directive per persona (cross-day state — YOUR call)
+Each writer gets either "include one mention (peer shop = X)" or "omit entirely." Decide with these rules:
+- **Anti-repetition streak (tracked PER MARKET, FR and DE separately):** if **three scripts in a row**
+  cover the SAME product on the SAME market and that market's offering hasn't changed, the **next TWO
+  days on that market are pure-value with NO IvoryShard mention at all** (built to grow followers).
+  Bring the brand back only once that market's product/stock actually moves. A repeat on FR doesn't
+  force a value-only day on DE, and vice versa.
+- **Peer-shop rotation:** IvoryShard is the CONSTANT; the peer shop named alongside it must **rotate
+  day to day** — don't pair it with the same second shop (e.g. Fuji Store) every time. **Verify the
+  peer is real, reputable IN THAT MARKET (DE for Lea/Mila, FR for Chloé), and correctly spelled** before
+  you put it in a brief — a shop known in one country may be unknown in the other.
+- **Which product to feature:** research community hype PER PRODUCT (don't just trust a "Coming Soon"
+  tag). Pick the specific product with the strongest current hype, per market. If none is hyped enough
+  to mention organically, set the directive to a generic IvoryShard reference or "omit."
+- Pure-value, no-shop decks are the NORM, not the exception (most winning decks mention no shop) — when
+  in doubt, omit.
 
-### 5. Write the scripts (English-first; native ONLY for on-slide text)
-**Before writing, re-read `reference/content-learnings.md` and apply EVERY rule in it** (it captures
-the user's accumulated feedback and overrides conflicting guidance below).
-Write **three** scripts — Lea (DE), Chloé (FR), Mila (DE). The user reads English, so everything in the PDF is **English**, EXCEPT the exact words that go on a slide, which stay native (FR/DE) with an English gloss. For **each** persona:
-- **Format name** + **intensity** + **why this angle today** (English, 1 line)
-- **Slide-by-slide** (slide 1 = the hook). Use the exact field names from the schema below: `title` + `bullets` (native, the exact on-slide text), `title_en` + `bullets_en` (English gloss of each), `direction` (English: what to show / shoot — a note for the user, NEVER on the slide).
-- **CTA** = final-slide on-screen text: `on_screen` (native) + `en` (English gloss)
-- **Shot list** (English) — the `shot_list` field
-- **NO captions, NO hashtags for now** (the user will define caption rules later).
+### 6. Fan out the three persona-writers (parallel)
+Spawn **three `persona-writer` agents in one message** (Agent tool). Each brief contains:
+```
+{ persona, market, language, assigned_format, intensity, angle/why_today seed,
+  research_digest (for that market), verified_facts (for that market),
+  ivoryshard_directive ("include, peer = X" | "omit"), recent_formats (that persona) }
+```
+Each returns ONE script object matching `ScriptSchema` (use the Agent tool's `schema` option so the
+return is validated). The writers verify their own language-specific facts and apply
+`content-rules-core.md` + their pack.
 
-- **Keep per-persona note fields self-contained.** `why_today` is rendered in the PDF, and Mila's PDF goes to a different operator — so do NOT reference other personas by name (no "different from Lea") in any field. State the angle on its own terms.
+### 7. Assemble, self-check, deliver
+1. Collect the three script objects → assemble the `daily_content` payload (schema below).
+2. **Lint:** trigger `lint-content` (or `daily-content` with `dryRun: true`). It checks the mechanical
+   rules (deck length, ≤3 bullets, English parallel present, no numeric pull-rate/odds on a slide, no
+   "verify before filming" note, IvoryShard placement, **no duplicate formats**, restock-alert-CTA
+   sanity). **Fix every ERROR, review every WARN.** On a per-persona failure, **re-dispatch only that
+   persona-writer** with the error and re-assemble. Repeat until `ok: true`.
+3. **The linter doesn't judge truth.** Separately confirm every on-slide claim is verified (you did the
+   shared facts; the writers did their language-specific ones) and that any IvoryShard mention reads natural.
+4. Once clean and verified, trigger **`daily-content`** with `{ data: <the JSON>, market_knowledge:
+   <refreshed notes> }`. It lints (hard gate), renders **two PDFs**, posts each to its Slack channel,
+   and saves the day's formats + `market_knowledge` to Supabase:
+   - **Operator's PDF (Lea + Chloé)** → `SLACK_CHANNEL_OPERATOR`, title `Pokemon Content - <date>`.
+   - **Mila-only PDF** → `SLACK_CHANNEL_MILA`, title `Pokemon Content (Mila) - <date>`.
 
-**Honesty rules (hard — see `brand-personas.md`):** value-first; IvoryShard is one lowkey **named** tip, never the star; **no false scarcity** ("all that's left", "almost gone"), **no insider/"my shop" framing**, **no overhype**. The set is available elsewhere — recommend IvoryShard for fairness (checkout limits, restock alerts), not as the only option. All three personas must use different formats/angles.
-
-**🔒 FACTUAL ACCURACY (hard — memory `slide-facts-must-be-verified`):** every claim that lands ON a slide must be 1000% verified true. **You verify it (WebSearch/WebFetch are free — no key needed) BEFORE writing it.** NEVER write a "verify this before filming" note in `direction`/`shot_list` — that offloads the check onto the user and is exactly the failure mode to avoid. **No unofficial numbers on slides:** pull rates aren't published by Pokémon and community estimates disagree → never put a numeric pull rate on a slide; treat specific prices the same (volatile). Use qualitative truths ("rarest pull in the set", "SIR pulled far more often", "check the live Cardmarket cote"). Slide-safe = official set names/dates, card names, rarity tiers, standard pack counts (Box 36 / ETB 9 / Bundle 6), that day's live stock, and plain logic.
-
-**IvoryShard slide placement (memory `ivoryshard-integration-rules`):** when a (natural) store mention belongs on the deck — **5 slides → put it on slide 3; more than 5 slides → slide 4 or later.** Mid-deck, not only the final slide. Still one natural touch; omit entirely if it doesn't fit.
-
-Assemble the day's JSON in memory (the `daily_content` schema below) — this becomes the `data`
-payload for the `daily-content` task. (No local file needed; nothing persists to disk between runs.)
-
-### 6. Self-check the draft (draft → lint → fix → repeat)
-Treat the first JSON as a **draft**, not the final. Don't render or send until it's clean.
-1. **Lint it:** trigger **`lint-content`** with the JSON (or run a `daily-content` call with
-   `dryRun: true`). It deterministically checks the mechanical rules (4–5 content slides = 5–6 total incl. the CTA, 0–4 bullets
-   each (bullets optional), English parallel present, **no numeric pull-rate/odds on a slide**, **no "verify…before
-   filming" offload note**, **IvoryShard placement** = slide 3 on a 5-slide deck / slide 4+ on a
-   longer one, **no duplicate formats**, and warns if a **restock-alert CTA** is used for an in-stock
-   product).
-2. **Fix every ERROR; review every WARN.** Re-trigger until it returns `ok: true`.
-3. **The linter does NOT judge truth.** It can't tell if a fact is real — so separately confirm, with `WebSearch`/`WebFetch`, that **every on-slide claim is verified true** (per the FACTUAL ACCURACY rule above) and that each IvoryShard mention reads as natural, not bolted on. The linter is the floor, not the ceiling.
-4. **Check the draft against `reference/content-learnings.md`** — every rule there must hold (product
-   naming, single contextual IvoryShard touch + engagement-question close, save-worthy depth/"why",
-   concrete price ranges where relevant, no risky market-trend claims). Fix any miss before delivery.
-
-Only once it passes and you've verified the facts, run the final delivery.
-
-### 7–8. Render + deliver (one call)
-Trigger **`daily-content`** with `{ data: <the day's JSON>, market_knowledge: <your refreshed notes> }`.
-It lints (hard gate), renders **two PDFs**, posts each to its Slack channel, and saves state:
-- **Operator's PDF (Lea + Chloé)** → channel `SLACK_CHANNEL_OPERATOR`, title `Pokemon Content - <date>`.
-- **Mila-only PDF (for Valentin)** → channel `SLACK_CHANNEL_MILA`, title `Pokemon Content (Mila) - <date>`.
-
-PDF layout (each language **un-mixed** so the native script is one clean copy-paste block): each
-persona on its own page = **3 blocks in order** → (1) **NATIVE SCENARIO** — the full script in the
-slide language, in tinted boxes, copy-paste ready (no English mixed in); (2) **ENGLISH VERSION** —
-the same script in English, understanding only; (3) **DIRECTIONS & SHOT LIST** — per-slide filming
-notes. Title page = header (date, in-stock, coming-soon, banner/restock signal) + legend.
-
-- **Delivery = Slack** (replaces the old email). Two **separate channels**: the operator's two
-  profiles (Lea + Chloé) go to one channel; Mila goes to Valentin's channel. The bot token + the two
-  channel IDs live in the Trigger.dev env (`SLACK_BOT_TOKEN`, `SLACK_CHANNEL_OPERATOR`,
-  `SLACK_CHANNEL_MILA`).
-- **`daily-content` also persists** the day's three formats + your `market_knowledge` to Supabase, so
-  tomorrow's dedup + research start from today.
+PDF layout (each language un-mixed = one clean copy-paste block): each persona on its own page = 3
+blocks → (1) NATIVE SCENARIO; (2) ENGLISH VERSION; (3) DIRECTIONS & SHOT LIST. Title page = header
+(date, in-stock, coming-soon, banner/restock) + legend.
 
 ---
 
-## `daily_content_<date>.json` schema
+## `daily_content` schema (mirrors `src/lib/schema.ts`)
 ```json
 {
   "date": "2026-05-30",
   "store_state": {
     "banner": "none",
     "restock_signal": "none|coming_soon|banner",
-    "in_stock": [{"title": "...", "language": "French|German|English|Japanese|...", "url": "..."}],
+    "in_stock": [{"title": "...", "language": "French|German|English|...", "url": "..."}],
     "coming_soon": [{"title": "...", "language": "German"}]
   },
   "scripts": [
@@ -169,10 +149,10 @@ notes. Title page = header (date, in-stock, coming-soon, banner/restock signal) 
       "slides": [
         {"n": 1,
          "title": "<exact native TITLE on the slide>",
-         "bullets": ["<native bullet>", "<native bullet>"],
+         "bullets": ["<native bullet>"],
          "title_en": "<English translation of the title>",
-         "bullets_en": ["<English bullet>", "<English bullet>"],
-         "direction": "<English: what to film/show on this slide - NOT slide text>"}
+         "bullets_en": ["<English bullet>"],
+         "direction": "<English: what to film/show - NOT slide text>"}
       ],
       "cta": {"on_screen": "<native final-slide CTA>", "en": "<English gloss>"},
       "shot_list": "<English overall>"
@@ -180,20 +160,20 @@ notes. Title page = header (date, in-stock, coming-soon, banner/restock signal) 
   ]
 }
 ```
-- Every content slide needs a **title**; **bullets are OPTIONAL (0–4, aim ≤3)** — not every slide must be a bullet list. A slide can be one punchy line or a reveal with no bullets (see the "bullets are one tool, not a mandate" rule in `content-learnings.md`). **Deck length: 4–5 entries in `slides[]` + the `cta` (renders as the final slide) = 5–6 slides TOTAL counting the CTA. Max 6 total; 7+ is too many — aim for 5. [User feedback 2026-06-06.]** Study `reference/examples/` for **style & format**, not just bullet density.
-- `direction` and `shot_list` are English notes for the user; everything the viewer sees lives in `title`/`bullets` (native).
+- Every content slide needs a **title**; **bullets are OPTIONAL (0–3)** — not every slide is a bullet
+  list. Deck length matches the format (advice/value → 5–6 total incl. CTA, aim 5; showcase → may run
+  longer). See `content-rules-core.md`.
+- `direction` and `shot_list` are English operator notes; everything the viewer sees is native.
 - No `caption`/`hashtags`/`voiceover` fields — intentionally dropped for now.
 
 ## Outputs
-- Deliverables: **two Slack posts** — Lea+Chloé PDF → `SLACK_CHANNEL_OPERATOR`; Mila-only German PDF
-  → `SLACK_CHANNEL_MILA`.
-- Persisted state (Supabase): the day's three formats → `format_log`; your refreshed running notes →
-  `market_knowledge`.
-- No local intermediates — the JSON + PDFs live only in the task run; nothing writes to disk.
+- Two Slack posts (Lea+Chloé → operator channel; Mila → Mila channel).
+- Persisted state (Supabase): the day's three formats → `format_log`; refreshed notes → `market_knowledge`.
+- No local intermediates — the JSON + PDFs live only in the task run.
 
 ## Edge cases & notes
 - **Never** claim something is in stock without verifying the live read that day.
-- If the store is fully empty + no signal → all three personas go Soft (pure value/persona). This is normal/expected.
-- Keep all three genuinely different — same topic is fine, identical script/format is not. Lea ≠ Mila especially (both DE).
-- Prices: prefer **Cardmarket EUR** for FR/DE audiences; convert/verify before quoting.
+- Store fully empty + no signal → all three personas go Soft (pure value). Normal/expected.
+- Keep all three genuinely different — same topic is fine, identical script/format is not. Lea ≠ Mila especially.
+- Prices: prefer **Cardmarket EUR** for FR/DE; convert/verify before quoting.
 - Update this SOP as we learn (rate limits, what formats land, new sources).

@@ -63,7 +63,7 @@ function checkScript(s: Script, store: StoreState, errors: string[], warns: stri
     const n = sl.n ?? "?";
     if (!sl.title) errors.push(`[${who}] slide ${n}: no title`);
     const bullets = sl.bullets ?? [];
-    // Bullets are NOT mandatory (content-learnings: "don't force every slide into a bullet list" — a
+    // Bullets are NOT mandatory (content-rules-core: "don't force every slide into a bullet list" — a
     // slide can be a single punchy line / reveal with 0-1 bullets). Only enforce the MAX.
     if (bullets.length > 4) {
       errors.push(`[${who}] slide ${n}: has ${bullets.length} bullets (max 4)`);

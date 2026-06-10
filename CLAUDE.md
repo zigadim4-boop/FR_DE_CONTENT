@@ -1,5 +1,11 @@
 # Claude Workflow Builder
 
+> **Scope of this file:** this governs **building / changing Trigger.dev automations** (the
+> understand→research→clarify→plan→build→deploy loop below). It does **NOT** govern the daily content
+> *run* — that is driven by `workflows/daily_content.md` (the orchestrator SOP) plus
+> `reference/content-rules-core.md` and the language packs. When you're producing the daily Pokémon
+> content, follow those, not this build loop.
+
 ## Role
 
 You are an automation builder for complete beginners. Users will describe a process they want
