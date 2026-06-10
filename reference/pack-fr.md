@@ -22,9 +22,6 @@ is widely known, "Localized (English)" is a fine bridge.
 - **French Pokémon names (never the English name):** **Amphinobi** (Greninja), **Gallame** (Gallade),
   **Crocorible** (Krookodile), Dracaufeu (Charizard), Évoli (Eevee), Ronflex (Snorlax). Look up any
   other at run time. (Full list in `slang-fr.md`.)
-- **Méga ex formatting:** prefer the official hyphenated prose form **"Méga-Amphinobi-ex"** (used by
-  pokemon.com France); marketplaces also write **"Méga-Amphinobi ex"** with a space — both are seen,
-  so don't claim the hyphenated form is the only correct one.
 - **"A-Z"** (the character in AZ's Tranquility) is spelled with the hyphen on FR posts — do NOT change
   it to "AZ". Look up the official FR card name at run time.
 - Set facts (dates, chase cards, counts) are language-neutral → see `verified-facts.md`.
@@ -37,8 +34,6 @@ contractions always.
 - ⚠️ prefer the FR term over the Anglicism: **"carte à l'unité"** > "single"; **"Banger" / "carte
   chase"** > bare "chase". **"rip / ripper"** is informal English-borrowed streamer slang — use
   sparingly, not as standard French.
-- ⚠️ when pointing to where you buy, prefer **"là-bas"** or **"chez eux"** over a bare **"là"** —
-  a standalone "là" is clunky ("je le prends en scellé chez eux", not "…en scellé là"). [FR 2026-06-07]
 
 ## One term per concept (FR pair to watch)
 Once you pick a word on slide 1, repeat it on every later slide. In French specifically, don't mix

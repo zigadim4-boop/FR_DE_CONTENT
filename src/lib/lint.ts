@@ -93,12 +93,13 @@ function checkScript(s: Script, store: StoreState, errors: string[], warns: stri
   if (!cta.en) warns.push(`[${who}] CTA has no English gloss (en)`);
   if (ODDS_RE.test(ctaTxt)) errors.push(`[${who}] CTA: numeric pull-rate/odds on the final slide`);
 
-  // IvoryShard placement: 5 slides -> slide 3; >5 -> slide 4+
+  // IvoryShard placement — governs the IN-CONTENT touch only: 5 total -> slide 3; >5 -> slide 4+.
+  // The CTA is a separate channel (stock-matched snippet may name the shop, see content-formats.md +
+  // market-stock-logic.md) and is deliberately excluded from this check.
   const total = slides.length + (cta ? 1 : 0);
   const mentionIdxs: number[] = slides
     .filter((sl) => slideText(sl).toLowerCase().includes("ivoryshard"))
     .map((sl) => sl.n);
-  if (ctaTxt.toLowerCase().includes("ivoryshard")) mentionIdxs.push(slides.length + 1);
   if (mentionIdxs.length) {
     const first = Math.min(...mentionIdxs);
     if (total > 5 && first < 4) {

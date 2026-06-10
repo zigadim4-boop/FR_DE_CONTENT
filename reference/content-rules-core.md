@@ -40,13 +40,12 @@ shop, format assignment) are made by the brain and arrive in your brief.
   - When unsure whether a topic is interesting, compare it to the `reference/examples/` winners.
 - **Pick topics that land with the WHOLE collector base, not a narrow slice.** Investor-only angles
   (long-term sealed-box storage, deep ROI/spec plays) cap reach — niche is the exception, not the
-  default. (Protecting your *pulls/singles* — sleeve → toploader → away from light — is still broadly
-  relatable; it's *long-term sealed-box storage* that's niche. Keep the two separate.)
+  default.
 - **Relatable angle bank (concepts — localize the wording fresh):** pull reveals; favorite cards (+ why);
   others-vs-me comparisons; collector struggles / relatable POV; "wish I knew" beginner lists; top-5
   picks; **anti-FOMO / "collect what YOU love, ignore the money side"** (a proven whole-base emotional
   theme — but execute with CONCRETE beats, never the feel-good platitudes themselves on a slide; see
-  "No filler").
+  "Make every slide save-worthy").
   - ✅ DE: "5 Dinge die ich beim Sammeln gern früher gewusst hätte" · "Andere Sammler vs ich 😅"
   - ✅ FR: "5 trucs que j'aurais aimé savoir plus tôt" · "Les autres vs moi 😅"
 - **A comparison angle needs a real STAKE, not a flat "which do you prefer?".** The pull of a
@@ -102,8 +101,11 @@ Open a loop; never announce a lesson. Pick whichever approach below fits the dec
 Whether to mention IvoryShard today, and which peer shop to pair, is decided by the brain and arrives
 in your brief. When the brief says include one mention:
 - **Exactly one natural touch, mid-deck (~slide 3 on a 5-slide deck, slide 4+ on a longer one), in
-  first person** — a collector saying where *she* buys, never a brand announcement. **Never on slide 1,
-  2, or the last slide.** It's a one-line aside folded into a value beat, **never its own promo slide**.
+  first person** — a collector saying where *she* buys, never a brand announcement. **The in-content
+  touch never lands on slide 1, 2, or the last slide.** It's a one-line aside folded into a value beat,
+  **never its own promo slide**. (The final CTA slide is a separate channel: it may name the shop via
+  the stock-matched CTA snippets in `content-formats.md`, at the intensity `market-stock-logic.md`
+  allows — that does not count as the touch.)
 - **Frame it as the answer to "where do I get THIS exact product?"** — land it on a concrete-product
   slide, not a generic category slide. Frame as "where I buy," **not** a hard "available now / in stock"
   claim (stock drifts, reads salesy) and **not** a sign-up funnel ("notifications an").
@@ -192,16 +194,14 @@ in your brief. When the brief says include one mention:
   item, ✅ "Soit tu l'ouvres et tu kiffes, soit tu le gardes scellé"; ❌ "Ouvre-en un et garde le reste".
 
 ## Make every slide save-worthy (depth, not generic advice)
-- **"Value" = USEFUL, fun, different, UNIQUE info — NOT prices, NOT basic info.** Real substance the
-  viewer doesn't already know: a fresh take, a surprising reveal, an angle nobody else is posting.
-  - ❌ basic/obvious ("sleeve your cards"), or a deck that's really just a list of prices.
-- **Ban filler — both tactical truisms AND feel-good platitudes.** A tip a collector already knows
-  ("opening is a gamble", "keeping it sealed keeps your options open") and an emotional platitude ("buy
-  what you love", "no one can put a number on your joy") both give no reason to stop or save. A line
-  earns its slide ONLY if it tells the collector something they don't know. Default to: a specific market
-  price, a leak, a fresh release, a lore detail, a timing pattern, a contrarian take, an unexpected
-  comparison. For the proven anti-FOMO theme, execute each slide as a CONCRETE beat — a specific
-  consequence, a decision rule, or a contrarian reframe — and close on a real reframe, not a warm cliché.
+- **"Value" = something the collector doesn't already know — ban filler of every kind.** Real substance:
+  a fresh take, a surprising reveal, a leak, a specific market price, a lore detail, a timing pattern, a
+  contrarian take, an unexpected comparison. Filler is anything that gives no reason to stop or save —
+  basic/obvious info ("sleeve your cards"), a deck that's really just a list of prices, tactical truisms
+  the collector already knows ("opening is a gamble", "keeping it sealed keeps your options open"), and
+  feel-good platitudes ("buy what you love", "no one can put a number on your joy"). For the proven
+  anti-FOMO theme, execute each slide as a CONCRETE beat — a specific consequence, a decision rule, or a
+  contrarian reframe — and close on a real reframe, not a warm cliché.
   - ❌ DE: "Kauf was du liebst" · "Booster sind zum Spaß da" → ✅ DE: consequence "Kaufst du auf Hype, zahlst du den Hype-Preis, der in Wochen fällt" · rule "Der Test: willst du sie noch bei 0 €?"
 - **Give the "why"** behind advice — the mechanism, not the obvious rule. ✅ "Loin du soleil : les UV ternissent" · ❌ "Loin du soleil et de l'humidité".
 - **Give cards emotional/lore context** so their significance lands. ✅ AZ's SIR: "Réuni à sa Floette après des millénaires 🥲".

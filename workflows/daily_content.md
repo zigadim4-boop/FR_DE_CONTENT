@@ -51,8 +51,9 @@ anything that depends on the *other* personas or on *other days* is YOUR job, pa
 ### 1. Read the store (stock + restock signals)
 Trigger **`scrape-store`** → `store_state` (in_stock, coming_soon, banner, restock_signal) + product detail.
 - **Restock signal FIRST (banner ≫ coming soon):** a real **announcement-bar banner** = the only strong
-  signal (→ Strong intensity allowed). **"Coming soon"** = mild only (nudge to Medium at most, never
-  hype, never insider framing). **Ignore the hero carousel.**
+  signal (→ Strong intensity allowed). **"Coming soon"** = mild only (if the stock matrix would yield
+  Soft, it may raise that market to Medium at most — never higher, never hype, never insider framing).
+  **Ignore the hero carousel.**
 - **Classify in-stock products** by the English title's parenthetical language suffix: `(French)`→FR,
   `(German)`→DE, `(English)`→both, other→judgment. (`scrape-store` sets `language`; sanity-check it.)
 
@@ -67,12 +68,15 @@ Trigger **`scrape-store`** → `store_state` (in_stock, coming_soon, banner, res
 - **Verify the slide-safe facts in `reference/verified-facts.md`** for today (dates, set names, chase
   cards, counts) — these are language-neutral; you confirm them once and pass each market's slice into
   the briefs so writers don't re-research them.
-- **Read `reference/market-intel.md`** (human-curated hooks). **Persist** what you learned into
-  `market_knowledge` (passed to `daily-content` at the end).
+- **Read `reference/market-intel.md`** (price trends + news hooks; set facts live in
+  `verified-facts.md`). **Check its `Last updated` stamp: if older than 3 days, treat it as a BLOCKER —
+  refresh its price/news sections (and the stamp) from the listed sources before briefing any writer;
+  never brief from stale intel.** **Persist** what you learned into `market_knowledge` (passed to
+  `daily-content` at the end).
 
 ### 3. Decide CTA intensity per market
-Apply `market-stock-logic.md` to today's stock → set **intensity** (soft / medium / hard / hype) for
-**DE** and **FR** independently.
+Apply `market-stock-logic.md` to today's stock → set **intensity** (soft / medium / strong — strong
+only with a live banner) for **DE** and **FR** independently.
 
 ### 4. Assign formats (enforce all the cross-persona rules HERE)
 From `content-formats.md`, pick a format/angle for **each of the three personas**. This is where the
@@ -113,7 +117,7 @@ return is validated). The writers verify their own language-specific facts and a
 ### 7. Assemble, self-check, deliver
 1. Collect the three script objects → assemble the `daily_content` payload (schema below).
 2. **Lint:** trigger `lint-content` (or `daily-content` with `dryRun: true`). It checks the mechanical
-   rules (deck length, ≤3 bullets, English parallel present, no numeric pull-rate/odds on a slide, no
+   rules (deck length, ≤4 bullets, English parallel present, no numeric pull-rate/odds on a slide, no
    "verify before filming" note, IvoryShard placement, **no duplicate formats**, restock-alert-CTA
    sanity). **Fix every ERROR, review every WARN.** On a per-persona failure, **re-dispatch only that
    persona-writer** with the error and re-assemble. Repeat until `ok: true`.

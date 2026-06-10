@@ -49,15 +49,10 @@ Don't conflate the two release dates (17 Jul ME05 vs 16 Sep 30th). They are diff
   never the FR/EN/DE name.
 - JP "Ninja Spinner" released **13 Mar 2026**; the Western set (**122 cards**) released **22 May 2026**
   (verified 2026-06-04 via Bulbapedia / PokeBeach / pokemon.com FR).
-- **Card delta (the best JP-vs-Western angle):** most of the base set is **shared**, incl. the
-  headliner **Mega Greninja ex** (FR Méga-Amphinobi-ex); the Western printing **ADDS** cards the JP
-  base lacked — **Mega Gallade ex** (FR Méga-Gallame-ex) and a **regular Krookodile ex** (FR Crocorible
-  ex — *NOT* a Mega), plus a Trainer.
-  - ❌ never say "only the headliner is shared" (false — most of the set is shared).
-  - ❌ never call Crocorible ex a "Méga".
 - A localized (Western) set is NOT identical to its JP base: different NAME and often a different CARD
-  LIST (merges JP sets and/or adds cards). In any JP-vs-Western post, verify the JP base-set name, the
-  shared cards, and the added cards at run time.
+  LIST (the Western printing merges JP sets and/or ADDS cards — e.g. ME04 added Méga-Gallame-ex and a
+  regular Crocorible ex, *NOT* a Méga). If ever running a JP-vs-Western angle (flagged boring in core —
+  rare), re-verify the JP base-set name and the shared/added cards at run time.
 
 ## AZ's Tranquility (in Chaos Ascendant) — confirmed
 - A **Supporter SIR**; the art shows **AZ reunited with his Eternal Flower Floette** (lore-accurate —

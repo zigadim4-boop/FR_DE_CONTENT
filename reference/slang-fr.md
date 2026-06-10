@@ -62,6 +62,7 @@ How French collectors actually talk. The FR community uses **a lot of English lo
 | **Sleeve / sleever** | To put cards in sleeves. "Sleeve tes cartes direct." |
 | **Toploader / classeur** | Toploader / binder. |
 | **Le hobby** | The hobby. |
+| **Là-bas / chez eux** | When pointing to where you buy, prefer these over a bare "là" — "je le prends en scellé chez eux", not "…en scellé là". |
 
 ## Tone notes — sounds native vs sounds like an ad
 - ✅ Native: *"franchement", "t'es au courant en premier", "ça vaut le coup", "fais gaffe", "perso", "de loin", "au pire"*

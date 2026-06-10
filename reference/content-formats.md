@@ -32,7 +32,7 @@ If the format you picked is NOT one of these (e.g. a pull-odds comparison, a lor
 **Placement — exact rule (user, 2026-05-30):** put the natural IvoryShard touch mid-deck, not only on the final slide (viewers drop off before the end):
 - **5-slide carousel → mention on slide 3.**
 - **More than 5 slides → mention on slide 4 or later** (4th at the earliest, never before).
-You can lightly reinforce it on the final/CTA slide. Still ONE genuine, natural touch — just positioned where people actually see it, and still subject to the "only if it fits naturally, else omit" rule.
+The final/CTA slide may carry the stock-matched CTA naming the shop (see the CTA snippets below + `market-stock-logic.md`) — that is the CTA channel, NOT the in-content touch, which stays mid-deck. Still ONE genuine, natural touch in the content slides, and still subject to the "only if it fits naturally, else omit" rule.
 
 ## CTA snippets — pick by the product's LIVE availability (see market-stock-logic.md Step B2)
 - **In stock now (FR):** "Si tu veux le tester, le [produit] est dispo là maintenant sur IvoryShard 👀" · "(DE) Falls du's willst: das [Produkt] ist gerade auf IvoryShard verfügbar 👀"

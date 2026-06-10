@@ -51,10 +51,11 @@ and handed it to you in the brief. Stay in your lane.
 - **IvoryShard:** obey `ivoryshard_directive`. If "omit," write a pure-value deck with no shop mention
   at all. If "include," follow the integration craft in core (one mid-deck first-person aside, pair the
   peer shop named in the brief).
-- **Factual accuracy (hard):** every claim that lands on a slide must be verified true. Shared facts in
-  the brief are pre-verified; you still **verify your LANGUAGE-SPECIFIC items yourself** (localized set/
-  card names, the FR/DE spelling) via WebSearch/WebFetch — both are free. Never write a "verify before
-  filming" note. No unofficial pull-rate/odds numbers on a slide.
+- **Factual accuracy (hard):** every claim that lands on a slide must be verified true. The
+  `verified_facts` in your brief are brain-verified TODAY — **trust them, do NOT re-verify or
+  second-guess them.** Your verification duty is ONLY the language-specific layer: localized set/card
+  names, FR/DE spelling, accents/hyphens — check those yourself via WebSearch/WebFetch (both are free).
+  Never write a "verify before filming" note. No unofficial pull-rate/odds numbers on a slide.
 - Respect deck length for the format (advice/value → 5–6 total incl. CTA; showcase → may run longer),
   the symbol ban, and the one-emoji-accent-per-line rule.
 

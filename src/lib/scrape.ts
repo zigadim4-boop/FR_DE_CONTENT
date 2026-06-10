@@ -11,7 +11,7 @@
  */
 import { chromium } from "playwright";
 
-export const BASE = "https://ivoryshard.com";
+const BASE = "https://ivoryshard.com";
 const POKEMON_URL = `${BASE}/collections/pokemon-cards`;
 const ALL_URL = `${BASE}/collections/all`;
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ContentBot/1.0";

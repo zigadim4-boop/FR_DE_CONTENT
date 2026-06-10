@@ -43,7 +43,7 @@ Match the ask to what the viewer can actually do right now, and **connect it nat
 | Both FR + DE (and/or EN) in stock | Medium | Medium |
 | Only `(Japanese)`/`(Chinese)`/other | Judgment: Medium if a genuinely hyped chase set (per `market-intel.md`), else Soft | Same |
 | Fully sold out, no signal | Soft | Soft |
-| **"Coming soon"** for a market (mild) | nudges that market Soft → **Medium** at most — never hype, never insider framing | same |
+| **"Coming soon"** for a market (mild) | if the rows above yield **Soft**, the tag may raise that market to **Medium** at most — never higher, never hype, never insider framing | same |
 | **BANNER live (real drop/restock)** | **Strong** → can point to the live drop, still honest | **Strong** → same |
 
 ## Step D — pick the content goal that matches intensity
